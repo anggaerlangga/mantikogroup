@@ -1,0 +1,1273 @@
+  @font-face{
+    font-family: "Poppins-Light";
+    src: url("../fonts/Poppins-Light.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Poppins-Light-Italic";
+    src: url("../fonts/Poppins-LightItalic.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Poppins-Medium";
+    src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Poppins-Medium-Italic";
+    src: url("../fonts/Poppins-MediumItalic.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Poppins-SemiBold";
+    src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Montserrat-Semibold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Montserrat-Medium";
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  }
+  
+  @font-face{
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
+/* Slide Banner */
+.carousel-inner {
+    /* display: inline-block; */
+    position: relative;   
+}
+/* End Slide Banner */
+
+#about {
+    position: relative;
+    margin-top: 150px;
+}
+
+#about h1 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 52px;
+  line-height: 124%;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+#about h2 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#about h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+#about p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+}
+
+#about .col-sm-7 {
+    margin-top: 50px;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+
+#about .col-sm-7 img {
+  width: 500px;
+  height: 322px;
+}
+
+#about .col-sm-5 {
+    margin-top: 50px;
+}
+
+#about .whatsapp {
+    position: fixed;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(200%);
+}
+
+/**********************************/
+/*         Sectwo                 */
+/*********************************/
+
+  .sectwo {
+    margin-top: 150px;
+  }
+
+  .sectwo .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: 2px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card {
+    border: none;
+    margin-top: 50px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body .card-title h3 {
+    margin-top: 30px;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+  }
+
+  .sectwo .container .row .col-sm-6 .btn-group {
+    margin-top: 30px;
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  .sectwo .btn-group .btn-outline-primary {
+    border-color: #9d57f1;
+    color: #9d57f1;
+  }
+
+  .sectwo .btn-group .btn-outline-primary:hover {
+      background: linear-gradient(#90a7f6, #9d57f1);
+      color: #ECE300;
+  }
+
+  .sectwo .container .row .sectwo-img {
+    margin-left: 100px;
+    width: 420px;
+    height: 280px;
+  }
+
+/**********************************/
+/*         Secthree               */
+/*********************************/
+
+  .secthree {
+    margin-top: 150px;
+  }
+
+  .secthree .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 124%;
+    letter-spacing: 2px;
+  }
+
+  .secthree .container .row .subtitle p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 160%;
+    letter-spacing: 1px;
+  }
+
+  .secthree .container .row .col-sm-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .secthree .container .row .col-sm-3 img {
+    width: 120px;
+    height: 120px;
+    margin-top: 50px;
+  }
+
+/**********************************/
+/*         Secfour               */
+/*********************************/
+
+.secfour {
+  margin-top: 150px;
+}
+
+.secfour .container .row .title h1 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  letter-spacing: 2px;
+}
+
+.secfour .container .row .col-sm-4 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: 1px solid;
+  margin-top: 50px;
+}
+
+.secfour .container .row .col-sm-4 .card .card-body h4 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 124%;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.secfour .container .row .col-sm-4 .card .card-body img {
+  width: 100%;
+  height: 100%;
+}
+
+/**********************************/
+/*         Secfive               */
+/*********************************/
+
+.secfive {
+  margin-top: 150px;
+}
+
+.secfive .container .row .title h1 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  letter-spacing: 2px;
+}
+
+/* Style the tab */
+.secfive .container .row .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.secfive .container .row .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.secfive .container .row .tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.secfive .container .row .tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.secfive .container .row .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.secfive .container .row .col-sm-3 {
+  margin-top: 50px;
+}
+
+.secfive .container .row .col-sm-3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/**********************************/
+/*         Secsix               */
+/*********************************/
+
+.secsix {
+  margin-top: 150px;
+}
+
+.secsix .container .row .title h1 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  letter-spacing: 2px;
+}
+
+.secsix .container .row .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.secsix .container .row .card .card-body h4 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 124%;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.secsix .container .row .card .card-body ul li {
+  font-family: 'Poppins-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+
+/**********************************/
+/*         PROYEK                 */
+/*********************************/
+.proyek {
+  margin-top: 150px;
+}
+
+.proyek hr {
+  width: 150px;
+  border: 2px solid #9d57f1;
+}
+
+.proyek .row .title h1 {
+  font-family: 'Poppins-Medium';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 124%;
+  letter-spacing: 2px;
+}
+
+.proyek .row .subtitle p {
+  font-family: 'Poppins-Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+
+.thumbnail {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+
+.thumbnail .thumbnail-img img {
+  width: 350px;
+  height: 280px;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 30px;
+}
+
+.thumbnail-body  {
+  background-color: rgba(0,0,0, 0.3);
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+  height: 15%;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all ease-in-out 0.5s;
+}
+
+.thumbnail-body h4 a {
+  font-family: 'Poppins-Light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #fff;
+}
+
+.thumbnail-body__link:link,
+.thumbnail-body__link:visited {
+  font-family: 'Poppins-Regular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 1px;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.4s; 
+  color: #000;
+}  
+
+.thumbnail:hover .thumbnail-body {
+  height: 280px;
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.proyek .row .col-sm-4 .thumbnail .thumbnail-body h4 a:hover {
+  color: #ffb600;
+}
+
+.proyek .row a {
+  font-family: 'Poppins-Regular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+.proyek .btn-outline-primary {
+  border-color: #9d57f1;
+  color: #9d57f1;
+}
+
+.proyek .btn-outline-primary:hover {
+  background: linear-gradient(#90a7f6, #9d57f1);
+  color: #ECE300;
+}
+
+
+/* Media Screen Queries */
+
+@media (max-width: 320px) {
+  #about .col-sm-7 img {
+    width: 100%;
+    height: 100%
+  }
+
+  #about h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: center;
+  }
+
+  #about p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+    text-align: justify;
+  }
+
+  .sectwo .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body .card-title h3 {
+    margin-top: 30px;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+  }
+
+  .secthree .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secthree .container .row .subtitle p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .secthree .container .row .col-sm-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .secthree .container .row .col-sm-3 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .secfour .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secfour .container .row .col-sm-4 .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .secfive .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .secsix .container .row .card .card-body ul li {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+  }
+  
+}
+
+@media (min-width: 321px ) and (max-width: 375px) {
+  #about .col-sm-7 img {
+    width: 100%;
+    height: 100%
+  }
+
+  #about h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: center;
+  }
+
+  #about p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+    text-align: justify;
+  }
+
+  .sectwo .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body .card-title h3 {
+    margin-top: 30px;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+  }
+
+  .secthree .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secthree .container .row .subtitle p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .secthree .container .row .col-sm-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .secthree .container .row .col-sm-3 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .secfour .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secfour .container .row .col-sm-4 .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .secfive .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .secsix .container .row .card .card-body ul li {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+  }
+
+}
+  
+
+@media (min-width: 376px ) and (max-width: 425px) {
+  #about .col-sm-7 img {
+    width: 100%;
+    height: 100%
+  }
+
+  #about h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: center;
+  }
+
+  #about p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+    text-align: justify;
+  }
+
+  .sectwo .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body .card-title h3 {
+    margin-top: 30px;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+  }
+
+  .secthree .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secthree .container .row .subtitle p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .secthree .container .row .col-sm-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .secthree .container .row .col-sm-3 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .secfour .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secfour .container .row .col-sm-4 .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .secfive .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  
+  .secsix .container .row .card .card-body ul li {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+  }
+
+}
+
+
+/* Media Query */
+/* max-widht 426 max 768 */
+@media (min-width: 426px ) and (max-width: 768px) {
+  #about .col-sm-7 img {
+    width: 100%;
+    height: 100%
+  }
+
+  #about h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: center;
+  }
+
+  #about p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+    text-align: justify;
+  }
+
+  .sectwo .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body .card-title h3 {
+    margin-top: 30px;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .secthree .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secthree .container .row .subtitle p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .secthree .container .row .col-sm-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .secthree .container .row .col-sm-3 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .secfour .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secfour .container .row .col-sm-4 .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .secfive .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body hr {
+    width: 120px; 
+  }
+  
+  .secsix .container .row .card .card-body ul li {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+  }
+}
+
+
+@media (min-width: 769px ) and (max-width: 1024px) {
+  #about .col-sm-7 img {
+    width: 100%;
+    height: 100%
+  }
+
+  #about h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+    text-align: center;
+  }
+
+  #about p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+    text-align: justify;
+  }
+
+  .sectwo .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .sectwo .container .row .col-sm-4 .card .card-body .card-title h3 {
+    margin-top: 30px;
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .secthree .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secthree .container .row .subtitle p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+    text-align: justify;
+  }
+
+  .secthree .container .row .col-sm-3 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: none;
+  }
+
+  .secthree .container .row .col-sm-3 img {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .secfour .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secfour .container .row .col-sm-4 .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .secfive .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body h4 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .secsix .container .row .card .card-body hr {
+    width: 120px; 
+  }
+  
+  .secsix .container .row .card .card-body ul li {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 1px;
+  }
+}
+
+  @media (min-width: 1441px ) and (max-width: 2560px) {
+    #about .col-sm-5 {
+        /* margin: -200px 0px; */
+        margin: 0px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    
+    #about .col-sm-7 {
+        /* margin: -200px 0px; */
+        /* margin: 0; */
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    } 
+
+  }
