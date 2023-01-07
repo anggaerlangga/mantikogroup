@@ -43,9 +43,9 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/bootstrap.png') ?>" alt="" class="img-responsive">
+                        <img src="<?php echo base_url('assets/img/mantiko.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
-                            <h3>D'Kapau Nusantara</h3>
+                            <h3>Mantiko Travel & Mice</h3>
                         </div>
                     </div>
                 </div>
@@ -53,9 +53,9 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/bootstrap.png') ?>" alt="" class="img-responsive">
+                        <img src="<?php echo base_url('assets/img/vidtron.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
-                            <h3>D'Kapau Nusantara</h3>
+                            <h3>Vidtron Multimedia Indotama</h3>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,37 @@
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/bootstrap.png') ?>" alt="" class="img-responsive">
+                        <img src="<?php echo base_url('assets/img/mgi.png') ?>" alt="" class="img-responsive">
+                        <div class="card-title">
+                            <h3>MGI Academy</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="<?php echo base_url('assets/img/uf-enterprise.png') ?>" alt="" class="img-responsive">
+                        <div class="card-title">
+                            <h3>UF Enterprise</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="<?php echo base_url('assets/img/kakoto.png') ?>" alt="" class="img-responsive">
+                        <div class="card-title">
+                            <h3>Kakoto</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="<?php echo base_url('assets/img/minang.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>D'Kapau Nusantara</h3>
                         </div>
