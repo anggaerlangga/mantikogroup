@@ -1,0 +1,115 @@
+@font-face{
+  font-family: "Poppins-Light";
+  src: url("../fonts/Poppins-Light.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Poppins-Light-Italic";
+  src: url("../fonts/Poppins-LightItalic.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Poppins-Medium";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Poppins-Medium-Italic";
+  src: url("../fonts/Poppins-MediumItalic.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Poppins-SemiBold";
+  src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Montserrat-Bold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Montserrat-Semibold";
+  src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Montserrat-Medium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Montserrat-Regular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+  
+@font-face{
+  font-family: "Montserrat-Light";
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+  
+
+.about-founder {
+    margin-top: 100px;
+}
+
+.about-founder .container .row .title .h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.about-founder .container .founder-area {
+    margin-top: 80px;
+}
+
+.about-founder .container .founder-area .row .col-sm-4 .founder-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-founder .container .founder-area .row .col-sm-8 .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-founder .container .founder-area .row .col-sm-8 p {
+    font-family: 'Poppins-Light';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 124%;
+    letter-spacing: 1px;
+    color: #0F0F0F;
+    text-align: justify;
+}
+
+.about-structure {
+    margin-top: 100px;
+}
+
+.about-structure .container .row .title h1 {
+    font-family: 'Poppins-Medium';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 124%;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.about-structure .container .row .col-sm-4 img {
+    width: 100%;
+}

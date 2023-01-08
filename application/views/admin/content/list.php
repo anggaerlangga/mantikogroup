@@ -22,40 +22,46 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <h1 class="h3 mb-2 text-gray-800">Section Page Testimoni</h1>
+                <h1 class="h3 mb-2 text-gray-800">Section Page content</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/testimoni/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+                        <a href="<?php echo site_url('admin/content/add') ?>"><i class="fas fa-plus"></i> Add New</a>
                     </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Page</th>
+                                            <th>Lang</th>
                                             <th>Title</th>
+                                            <th>Subtitle</th>
                                             <th>Description</th>
-                                            <th>Customer Name</th>
-                                            <th>Type</th>
+                                            <th>Meta Title</th>
+                                            <th>Meta Description</th>
                                             <th>Image</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach ($testimoni as $testimoni): ?>
+                                        <?php foreach ($content as $content): ?>
                                         <tr>
-                                            <td><?php echo $testimoni->title ?></td>
-                                            <td><?php echo $testimoni->description ?></td>
-                                            <td><?php echo $testimoni->customer_name ?></td>
-                                            <td><?php echo $testimoni->type ?></td>
+                                            <td><?php echo $content->page_id ?></td>
+                                            <td><?php echo $content->lang ?></td>
+                                            <td><?php echo $content->title ?></td>
+                                            <td><?php echo $content->subtitle ?></td>
+                                            <td><?php echo $content->description ?></td>
+                                            <td><?php echo $content->meta_title ?></td>
+                                            <td><?php echo $content->meta_description ?></td>
                                             <td>
-											    <img src="<?php echo base_url('upload/homepage/'.$testimoni->image) ?>" width="64" />
+											    <img src="<?php echo base_url('upload/homepage/'.$content->image) ?>" width="64" />
 										    </td>
                                             <td>
-                                                <a href="<?php echo site_url('admin/testimoni/edit/'.$testimoni->testimoni_id) ?>"
+                                                <a href="<?php echo site_url('admin/content/edit/'.$content->content_id) ?>"
                                                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                                                <a onclick="deleteConfirm('<?php echo site_url('admin/testimoni/delete/'.$testimoni->testimoni_id) ?>')"
+                                                <a onclick="deleteConfirm('<?php echo site_url('admin/content/delete/'.$content->content_id) ?>')"
                                                 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Delete</a>
 										    </td>
                                         </tr>

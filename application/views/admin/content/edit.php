@@ -33,43 +33,76 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/testimoni') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
+                        <a href="<?php echo site_url('admin/content') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
                     </div>
                     <div class="card-body">
-                        <form action="" method="post" enctype="multipart/form-data" >    
+                        <form action="" method="post" enctype="multipart/form-data" >
+                            <div class="form-group">
+                                <label for="page_id">Pages</label>
+                                <select class="form-control" name="page_id" value="<?php echo $content->page_id ?>">
+								    <option value="FOSO">Founder Story</option>
+									<option value="ABOUT">About US</option>
+                                    <option value="CAREER">Career</option>
+                                    <option value="PRODUCT">Product & Service</option>
+								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('page_id') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lang">Language</label>
+                                <select class="form-control" name="lang" value="<?php echo $content->lang ?>">
+                                    <option value="ID">ID</option>
+								    <option value="EN">English</option>
+								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('lang') ?>
+                                </div>
+                            </div>
+
                             <div class="form-group">
                                 <label for="title">Title</label>
                                 <input class="form-control <?php echo form_error('title') ? 'is-invalid':'' ?>"
-                                    type="text" name="title" placeholder="Title" value="<?php echo $testimoni->title ?>" />
+                                    type="text" name="title" placeholder="Title" value="<?php echo $content->title ?>" />
                                 <div class="invalid-feedback">
                                     <?php echo form_error('title') ?>
                                 </div>
                             </div>
 
                             <div class="form-group">
+                                <label for="subtitle">Subtitle</label>
+                                <input class="form-control <?php echo form_error('subtitle') ? 'is-invalid':'' ?>"
+                                    type="text" name="subtitle" placeholder="Title" value="<?php echo $content->subtitle ?>" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('subtitle') ?>
+                                </div>
+                            </div>
+
+                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <input class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
-                                    type="text-area" name="description" placeholder="Description" value="<?php echo $testimoni->description ?>" />
+                                <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
+                                    rows="4" cols="50" name="description" value="<?php echo $content->description ?>"></textarea>
                                 <div class="invalid-feedback">
                                     <?php echo form_error('description') ?>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="customer_name">Customer Name</label>
-                                <input class="form-control <?php echo form_error('customer_name') ? 'is-invalid':'' ?>"
-                                    type="text" name="customer_name" placeholder="Customer Name" value="<?php echo $testimoni->customer_name ?>" />
+                                <label for="meta_title">Meta Title</label>
+                                <input class="form-control <?php echo form_error('meta_title') ? 'is-invalid':'' ?>"
+                                    type="text" name="meta_title" placeholder="Meta Title" value="<?php echo $content->meta_title ?>" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('customer_name') ?>
+                                    <?php echo form_error('meta_title') ?>
                                 </div>
                             </div>
-
+                            
                             <div class="form-group">
-                                <label for="type">Type</label>
-                                <input class="form-control <?php echo form_error('type') ? 'is-invalid':'' ?>"
-                                    type="text" name="type" placeholder="Type" value="<?php echo $testimoni->type ?>" />
+                                <label for="meta_description">Meta Description</label>
+                                <input class="form-control <?php echo form_error('meta_description') ? 'is-invalid':'' ?>"
+                                    type="text" name="meta_description" placeholder="Meta Desription" value="<?php echo $content->meta_description ?>" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('type') ?>
+                                    <?php echo form_error('meta_description') ?>
                                 </div>
                             </div>
 
@@ -77,13 +110,13 @@
 								<label for="image">Image</label>
 								<input class="form-control <?php echo form_error('image') ? 'is-invalid':'' ?>"
 								 type="file" name="image" />
-                                 <input type="hidden" name="old_image" value="<?php echo $testimoni->image ?>" />
+                                 <input type="hidden" name="old_image" value="<?php echo $content->image ?>" />
 								<div class="invalid-feedback">
 									<?php echo form_error('image') ?>
 								</div>
 							</div>
 
-                            <input type="hidden" name="testimoni_id" value="<?php echo $testimoni->testimoni_id ?>" />
+                            <input type="hidden" name="content_id" value="<?php echo $content->content_id ?>" />
                             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <input class="btn btn-success" type="submit" name="btn" value="Save" />
                 

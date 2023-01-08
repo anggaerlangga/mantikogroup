@@ -22,7 +22,7 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <h1 class="h3 mb-2 text-gray-800">Add Content in this section</h1>
+                <h1 class="h3 mb-2 text-gray-800">Add Content in Section</h1>
 
                 <?php if ($this->session->flashdata('success')): ?>
                     <div class="alert alert-success" role="alert">
@@ -33,10 +33,34 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/testimoni') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
+                        <a href="<?php echo site_url('admin/content') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
                     </div>
                     <div class="card-body">
-                        <form action="<?php echo site_url('admin/testimoni/add') ?>" method="post" enctype="multipart/form-data" >
+                        <form action="<?php echo site_url('admin/content/add') ?>" method="post" enctype="multipart/form-data" >
+                            <div class="form-group">
+                                <label for="page_id">Pages</label>
+                                <select class="form-control" name="page_id">
+								    <option value="FOSO">Founder Story</option>
+									<option value="ABOUT">About US</option>
+                                    <option value="CAREER">Career</option>
+                                    <option value="PRODUCT">Product & Service</option>
+								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('page_id') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="lang">Language</label>
+                                <select class="form-control" name="lang">
+                                    <option value="ID">ID</option>
+								    <option value="EN">English</option>
+								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('lang') ?>
+                                </div>
+                            </div>
+                            
                             <div class="form-group">
                                 <label for="title">Title</label>
                                 <input class="form-control <?php echo form_error('title') ? 'is-invalid':'' ?>"
@@ -47,33 +71,38 @@
                             </div>
 
                             <div class="form-group">
+                                <label for="subtitle">Subtitle</label>
+                                <input class="form-control <?php echo form_error('subtitle') ? 'is-invalid':'' ?>"
+                                    type="text" name="subtitle" placeholder="Subtitle" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('subtitle') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
                                 <label for="description">Description</label>
-                                <input class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
-                                    type="text-area" name="description" placeholder="Description" />
+                                <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
+                                    rows="4" cols="50" name="description" placeholder="Description"></textarea>
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('Description') ?>
+                                    <?php echo form_error('description') ?>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="meta_description">Meta Description</label>
+                                <input class="form-control <?php echo form_error('meta_description') ? 'is-invalid':'' ?>"
+                                    type="text" name="meta_description" placeholder="Meta Desription" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('meta_description') ?>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="customer_name">Customer Name</label>
-                                <input class="form-control <?php echo form_error('customer_name') ? 'is-invalid':'' ?>"
-                                    type="text" name="customer_name" placeholder="Customer Name" />
+                                <label for="meta_title">Meta Title</label>
+                                <input class="form-control <?php echo form_error('meta_title') ? 'is-invalid':'' ?>"
+                                    type="text" name="meta_title" placeholder="Meta Title" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('customer_name') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="type">Type</label>
-                                <select class="form-control" name="type">
-								    <option value="Bangun Baru">Bangun Baru</option>
-									<option value="Renovasi">Renovasi</option>
-                                    <option value="Konstruksi">Konstruksi</option>
-                                    <option value="Exclusive">Exclusive</option>
-								</select>
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('type') ?>
+                                    <?php echo form_error('meta_title') ?>
                                 </div>
                             </div>
 
@@ -86,7 +115,7 @@
 								</div>
 							</div>
 
-                            <input type="hidden" name="testimoni_id" value="abc" />
+                            <input type="hidden" name="content_id" value="abc" />
                             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <input class="btn btn-success" type="submit" name="btn" value="Save" />
                 
