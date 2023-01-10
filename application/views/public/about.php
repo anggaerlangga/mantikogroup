@@ -34,26 +34,39 @@
         <div class="row justify-content-center">
             <div class="title">
                 <h1>Structure</h1>
+                <hr>
             </div>
         </div>
         <div class="row justify-content-center">
             <div class="col-sm-4">
-                <img src="<?php echo base_url('assets/img/PT Yudanto.png')?>" class="img-responsive">
+                <div class="avatar">
+                    <img src="<?php echo base_url('assets/img/PT Yudanto.png')?>" class="img-responsive">
+                </div>
             </div>
             <div class="col-sm-4">
-                <img src="<?php echo base_url('assets/img/PT Fedri.png')?>" class="img-responsive">
+                <div class="avatar">
+                    <img src="<?php echo base_url('assets/img/PT Fedri.png')?>" class="img-responsive">
+                </div>
             </div>
             <div class="col-sm-4">
-                <img src="<?php echo base_url('assets/img/PT Buyan.png')?>" class="img-responsive">
+                <div class="avatar">
+                    <img src="<?php echo base_url('assets/img/PT Buyan.png')?>" class="img-responsive">
+                </div>
             </div>
             <div class="col-sm-4">
-                <img src="<?php echo base_url('assets/img/PT Putri.png')?>" class="img-responsive">
+                <div class="avatar">
+                    <img src="<?php echo base_url('assets/img/PT Putri.png')?>" class="img-responsive">
+                </div>
             </div>
             <div class="col-sm-4">
-                <img src="<?php echo base_url('assets/img/PT Mustika.png')?>" class="img-responsive">
+                <div class="avatar">
+                    <img src="<?php echo base_url('assets/img/PT Mustika.png')?>" class="img-responsive">
+                </div>
             </div>
             <div class="col-sm-4">
-                <img src="<?php echo base_url('assets/img/PT Mireri.png')?>" class="img-responsive">
+                <div class="avatar">
+                    <img src="<?php echo base_url('assets/img/PT Mireri.png')?>" class="img-responsive">
+                </div>
             </div>
         </div>
     </div>
