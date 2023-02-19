@@ -42,6 +42,8 @@
                                 <select class="form-control" name="page_id">
 								    <option value="FOSO">Founder Story</option>
 									<option value="ABOUT">About US</option>
+                                    <option value="CSR">CSR</option>
+                                    <option value="STRUCTURE">Structure</option>
                                     <option value="CAREER">Career</option>
                                     <option value="PRODUCT">Product & Service</option>
 								</select>

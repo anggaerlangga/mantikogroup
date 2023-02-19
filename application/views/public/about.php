@@ -71,3 +71,22 @@
         </div>
     </div>
 </section>
+
+<section class="csr" id="csr">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title">
+                <h1>CSR</h1>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="csr-collection">
+                    <img src="<?php echo base_url() ?>" class="img-responsive">
+                    <h4></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -39,9 +39,12 @@
                         <form action="" method="post" enctype="multipart/form-data" >
                             <div class="form-group">
                                 <label for="page_id">Pages</label>
-                                <select class="form-control" name="page_id" value="<?php echo $content->page_id ?>">
+                                <select class="form-control" name="page_id">
+                                    <option value="<?php echo $content->page_id ?>"><?php echo $content->page_id ?></option>
 								    <option value="FOSO">Founder Story</option>
 									<option value="ABOUT">About US</option>
+                                    <option value="CSR">CSR</option>
+                                    <option value="STRUCTURE">Structure</option>
                                     <option value="CAREER">Career</option>
                                     <option value="PRODUCT">Product & Service</option>
 								</select>
@@ -82,7 +85,7 @@
                              <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
-                                    rows="4" cols="50" name="description" value="<?php echo $content->description ?>"></textarea>
+                                    rows="4" cols="50" name="description" value="<?php echo $content->description ?>"><?php echo $content->description ?></textarea>
                                 <div class="invalid-feedback">
                                     <?php echo form_error('description') ?>
                                 </div>

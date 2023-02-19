@@ -33,38 +33,29 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/partner') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
+                        <a href="<?php echo site_url('admin/client') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
                     </div>
                     <div class="card-body">
-                        <form action="<?php echo site_url('admin/partner/add') ?>" method="post" enctype="multipart/form-data" >
+                        <form action="<?php echo site_url('admin/client/add') ?>" method="post" enctype="multipart/form-data" >
                             <div class="form-group">
-                                <label for="partner_name">Partner Name</label>
-                                <input class="form-control <?php echo form_error('partner_name') ? 'is-invalid':'' ?>"
-                                    type="text" name="partner_name" id="partner_name" placeholder="Partner Name" />
+                                <label for="title">Title</label>
+                                <input class="form-control <?php echo form_error('title') ? 'is-invalid':'' ?>"
+                                    type="text" name="title" id="title" placeholder="Title" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('partner_name') ?>
+                                    <?php echo form_error('title') ?>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="description">Description</label>
-                                <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
-                                    rows="4" cols="50" name="description" placeholder="Description"></textarea>
+                                <label for="image">Image</label>
+                                <input class="form-control-file <?php echo form_error('image') ? 'is-invalid':'' ?>"
+                                 type="file" name="image" />
                                 <div class="invalid-feedback">
-                                    <?php echo form_error('description') ?>
+                                    <?php echo form_error('image') ?>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="photo">Image</label>
-                                <input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
-                                 type="file" name="photo" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('photo') ?>
-                                </div>
-                            </div>
-
-                            <input type="hidden" name="partner_id" value="abc" />
+                            <input type="hidden" name="client_id" value="abc" />
                             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <input class="btn btn-success" type="submit" name="btn" value="Save" />
                 

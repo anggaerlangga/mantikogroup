@@ -22,36 +22,34 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <h1 class="h3 mb-2 text-gray-800">Section Page Partner</h1>
+                <h1 class="h3 mb-2 text-gray-800">Section Page client</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/partner/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+                        <a href="<?php echo site_url('admin/client/add') ?>"><i class="fas fa-plus"></i> Add New</a>
                     </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Partner Name</th>
-                                            <th>Description</th>
-                                            <th>Photo</th>
+                                            <th>Title</th>
+                                            <th>Image</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach ($partner as $partner): ?>
+                                        <?php foreach ($client as $client): ?>
                                         <tr>
-                                            <td><?php echo $partner->partner_name ?></td>
-                                            <td><?php echo $partner->description ?></td>
+                                            <td><?php echo $client->title ?></td>
                                             <td>
-                                                <img src="<?php echo base_url('upload/homepage/'.$partner->photo) ?>" width="64" />
+                                                <img src="<?php echo base_url('upload/homepage/'.$client->image) ?>" width="64" />
                                             </td>
                                             <td>
-                                                <a href="<?php echo site_url('admin/partner/edit/'.$partner->partner_id) ?>"
+                                                <a href="<?php echo site_url('admin/client/edit/'.$client->client_id) ?>"
                                                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                                                <a onclick="deleteConfirm('<?php echo site_url('admin/partner/delete/'.$partner->partner_id) ?>')"
+                                                <a onclick="deleteConfirm('<?php echo site_url('admin/client/delete/'.$client->client_id) ?>')"
                                                 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Delete</a>
 										    </td>
                                         </tr>

@@ -35,53 +35,14 @@
         <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Master Data:</h6> -->
             <a class="collapse-item" href="<?php echo site_url('admin/hero') ?>">Banner</a>
-            <!-- <a class="collapse-item" href="<?php echo site_url('admin/about') ?>">About</a> -->
-            <a class="collapse-item" href="<?php echo site_url('admin/product') ?>">Product</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/partner') ?>">Partner</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/proyek') ?>">Proyek</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/content') ?>">Content</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/client') ?>">Client</a>
             <a class="collapse-item" href="<?php echo site_url('admin/contact') ?>">Contact</a>
-        </div>
-    </div>
-</li>
-
-<!-- Nav Item - Pages Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree"
-        aria-expanded="true" aria-controls="collapseThree">
-        <i class="fas fa-fw fa-folder"></i>
-        <span>Master</span>
-    </a>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <!-- <h6 class="collapse-header">Custom Master Data:</h6> -->
-            <a class="collapse-item" href="<?php echo site_url('admin/category') ?>">Master Category</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/barang') ?>">Master Barang</a>
         </div>
     </div>
 </li>
 
 <!-- Divider -->
 <hr class="sidebar-divider">
-
-<!-- Heading -->
-<div class="sidebar-heading">
-    Setting
-</div>
-
-<!-- Nav Item - Utilities Collapse Menu -->
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-        aria-expanded="true" aria-controls="collapseUtilities">
-        <i class="fas fa-fw fa-wrench"></i>
-        <span>Management Akun</span>
-    </a>
-    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-        data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Custom Akun:</h6>
-            <a class="collapse-item" href="account.php">Account</a>>
-        </div>
-    </div>
-</li>
 
 </ul>
