@@ -13,7 +13,7 @@ class Company extends CI_Controller {
 		//  $banner["banner"] = $this->banner_model->getAll();
 
 		 $this->load->view('/common/header');
-		 $this->load->view('/public/company');
+		 $this->load->view('/public/company/about');
 		//  $this->load->view('/common/footer');
 
 	}
@@ -21,13 +21,15 @@ class Company extends CI_Controller {
 	public function mantikotravel()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/mantiko');
+		$this->load->view('/public/company/mantikotravel');
+		$this->load->view('/common/footer');
 	}
 
 	public function kakoto()
 	{
 		$this->load->view('/common/header');
 		$this->load->view('/public/company/kakoto');
+		$this->load->view('/common/footer');
 	}
 
 	public function vidtron()
@@ -40,6 +42,7 @@ class Company extends CI_Controller {
 	{
 		$this->load->view('/common/header');
 		$this->load->view('/public/company/mgi');
+		$this->load->view('/common/footer');
 	}
 
 	public function dkapau()

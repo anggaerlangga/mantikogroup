@@ -113,7 +113,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 
 <section class="secthree" id="secthree">
     <div class="container">
@@ -124,13 +124,7 @@
                 <hr>
             </div>
         </div>
-        <!-- <div class="row justify-content-center">
-            <div class="subtitle">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. </p>
-            </div>
-        </div> -->
         <div class="row justify-content-center">
-            <!-- <div class="img-group"> -->
                 <div class="col-sm-2">
                     <div class="card">
                         <img class="img-responsive" src="<?php echo base_url('assets/img/logo-bpn.png') ?>">   
@@ -161,47 +155,9 @@
                         <img class="img-responsive" src="<?php echo base_url('assets/img/logo-kemenhub.png') ?>">                
                     </div>   
                 </div>
-            <!-- </div> -->
         </div>
     </div>
 </section>
-
-<!-- <section class="secfour" id="secfour">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="title">
-                <h1>CAREER</h1>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="card"> 
-                    <div class="card-body"> 
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/career1.jpg') ?>">
-                        <h4>Business Associate</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/career2.jpg') ?>">
-                        <h4>Staff Administration</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/career3.jpg') ?>">
-                        <h4>Customer Service</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
 <section class="secfive" id="secfive">
     <div class="container">
@@ -213,11 +169,6 @@
             </div>
         </div>
         <div class="row">
-            <!-- <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'kapau')">D'Kapau</button>
-                <button class="tablinks" onclick="openCity(event, 'travel')">Mantiko Travel</button>
-                <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron Multimedia</button>
-            </div> -->
             <div class="col-sm-3">
                 <select class="form-control">
                     <option selected>Mantiko Travel</option>
@@ -302,7 +253,6 @@
         </div>
         <div class="tabcontent" id="mantiko">
             <div class="row">
-            <!-- Tab content -->
                 <div class="col-sm-6">
                     <div class="maps">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f905a17f1089%3A0xe3ce35c5d04f04b4!2sJl.%20KH%20Hasyim%20Ashari%20No.108%2C%20RT.005%2FRW.003%2C%20Poris%20Plawad%20Utara%2C%20Kec.%20Cipondoh%2C%20Kota%20Tangerang%2C%20Banten%2015122!5e0!3m2!1sid!2sid!4v1668959701845!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -314,12 +264,10 @@
                             <li><img src="<?php echo base_url('assets/img/telephone.png')?>"></li>
                             <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"></li>
                             <li><img src="<?php echo base_url('assets/img/instagram.png')?>"></li>
-                            <!-- <li><img src="<?php echo base_url('assets/img/mail.png')?>"></li> -->
                             <li><img src="<?php echo base_url('assets/img/place.png')?>"></li>
                         </ul>
                     </div>
                 </div>
-            <!-- </div> -->
         </div>
     </div>
 </section>

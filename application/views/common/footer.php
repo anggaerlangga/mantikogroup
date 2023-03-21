@@ -25,10 +25,11 @@
               <h4>TENTANG KAMI</h4>
             </div>
             <div class="logo">
-              <img src="<?php echo base_url('assets/img/logo_header.png')?>">
+              <img src="<?php echo base_url('assets/img/logo-footer.png')?>">
             </div>
             <div class="desc">
-              <p>Kami adalah perusahaan Distributor Bahan Bangunan. Kami mendistribusikan bahan bangunan seperti Besi Beton, Besi WF, H-Beam, CNP, UNP, Semen, Bata Ringan, Gypsum dll. Ke berbagai proyek seperti rumah tinggal, perumahan, proyek pemerintahan dan gedung bertingkat.</p>
+              <h4>PT Mantiko Group Indonesia</h4>
+              <p>adalah perusahaan yang didirikan oleh anak muda kelahiran padang</p>
             </div>
           </div>
         </div>
@@ -53,21 +54,12 @@
             </div>
             <div class="desc">
               <ul>
-                <li><a href="<?php echo base_url('/collection/product/STEEL') ?>">BESI BETON</a></li>
-                <li><a href="<?php echo base_url('/collection/product/CNP') ?>">CNP</a></li>
-                <li><a href="<?php echo base_url('/collection/product/UNP') ?>">UNP</a></li>
-                <li><a href="<?php echo base_url('/collection/product/WF') ?>">WF, IWF</a></li>
-                <li><a href="<?php echo base_url('/collection/product/HBEAM') ?>">H-BEAM</a></li>
-                <li><a href="<?php echo base_url('/collection/product/HOLLOW') ?>">HOLLOW HITAM</a></li>
-                <li><a href="<?php echo base_url('/collection/product/HOLLOWGALVANIS') ?>">HOLLOW GALVANIS</a></li>
-                <li><a href="<?php echo base_url('/collection/product/SIKU') ?>">BESI SIKU</a></li>
-                <li><a href="<?php echo base_url('/collection/product/PLAT') ?>">PLAT STRIP</a></li>
-                <li><a href="<?php echo base_url('/collection/product/GYP') ?>">GYPSUM</a></li>
-                <li><a href="<?php echo base_url('/collection/product/COMPND') ?>">COMPOUND</a></li>
-                <li><a href="<?php echo base_url('/collection/product/BAJARINGAN') ?>">BAJA RINGAN</a></li>
-                <li><a href="<?php echo base_url('/collection/product/ROOFING') ?>">METAL ROOFING</a></li>
-                <li><a href="<?php echo base_url('/collection/product/LISPLANK') ?>">LISPLANK</a></li>
-                <li><a href="<?php echo base_url('/collection/product/MORTAR') ?>">MORTAR</a></li>
+                <li><a href="<?php echo base_url('/collection/product/STEEL') ?>">Mantiko Travel & Mice</a></li>
+                <li><a href="<?php echo base_url('/collection/product/CNP') ?>">Kakoto Refleksi</a></li>
+                <li><a href="<?php echo base_url('/collection/product/UNP') ?>">MGI Academy</a></li>
+                <li><a href="<?php echo base_url('/collection/product/WF') ?>">Vidtron Multimedia</a></li>
+                <li><a href="<?php echo base_url('/collection/product/HBEAM') ?>">UF Enterprise WO</a></li>
+                <li><a href="<?php echo base_url('/collection/product/HOLLOW') ?>">D'Kapau Nusantara Resto</a></li>
               </ul>
             </div>
           </div>
@@ -81,7 +73,7 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="copyright">
-          &copy;2022 <span>CV Galactica Jaya Raya</span>. All Rights Reserved
+          &copy;2023 <span>PT Mantiko Group Indonesia</span>. All Rights Reserved
         </div>
       </div>
     </div>
