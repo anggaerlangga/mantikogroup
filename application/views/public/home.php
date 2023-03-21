@@ -1,12 +1,13 @@
 <section class="about" id="about">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-7">
-                <img src="<?php echo base_url('assets/img/pexels-pixabay.jpg') ?>" class="img-responsive" />
-            </div>
             <div class="col-sm-5">
+                <img src="<?php echo base_url('assets/img/mantikogroup.png') ?>" class="img-responsive" />
+            </div>
+            <div class="col-sm-7">
                 <div class="title">
-                    <h1>WHO WE ARE ? </h1>
+                    <h1 style="color:#0984e3;">APA ITU</h1>
+                    <h1>MANTIKO GROUP INDONESIA</h1>
                     <hr>
                 </div>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
@@ -17,7 +18,7 @@
                 Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
                 </p>
                 <div class="btn-group">
-                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                    <a href="#" class="btn btn-primary">Read More</a>
                 </div>
             </div>
         </div>
@@ -35,7 +36,8 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title">
-                <h1>OUR COMPANIES & PRODUCTS</h1>
+                <h2>PRODUK</h2>
+                <h1>Produk & Layanan kami</h1>
                 <hr>
             </div>
         </div>
@@ -46,6 +48,10 @@
                         <img src="<?php echo base_url('assets/img/mantiko.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>Mantiko Travel & Mice</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" class="btn btn-primary" role="button">Lebih Detail</a>
                         </div>
                     </div>
                 </div>
@@ -56,6 +62,7 @@
                         <img src="<?php echo base_url('assets/img/vidtron.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>Vidtron Multimedia Indotama</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                         </div>
                     </div>
                 </div>
@@ -66,6 +73,7 @@
                         <img src="<?php echo base_url('assets/img/mgi.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>MGI Academy</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                         </div>
                     </div>
                 </div>
@@ -76,6 +84,7 @@
                         <img src="<?php echo base_url('assets/img/uf-enterprise.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>UF Enterprise</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                         </div>
                     </div>
                 </div>
@@ -86,6 +95,7 @@
                         <img src="<?php echo base_url('assets/img/kakoto.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>Kakoto</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                         </div>
                     </div>
                 </div>
@@ -96,6 +106,7 @@
                         <img src="<?php echo base_url('assets/img/minang.png') ?>" alt="" class="img-responsive">
                         <div class="card-title">
                             <h3>D'Kapau Nusantara</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
                         </div>
                     </div>
                 </div>
@@ -108,35 +119,46 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title">
-                <h1>OUR CLIENTS</h1>
+                <h2>KLIEN</h2>
+                <h1>Klien - klien kami</h1>
                 <hr>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <!-- <div class="row justify-content-center">
             <div class="subtitle">
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. </p>
             </div>
-        </div>
+        </div> -->
         <div class="row justify-content-center">
             <!-- <div class="img-group"> -->
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/bootstrap.png') ?>">   
+                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-bpn.png') ?>">   
                     </div>             
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/bootstrap.png') ?>">
+                        <img class="img-responsive" src="<?php echo base_url('assets/img/bankdki.png') ?>">
                     </div>                
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/bootstrap.png') ?>">                
+                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-koperasi.png') ?>">                
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/bootstrap.png') ?>">                
+                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-kemenkom.png') ?>">                
+                    </div>   
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-telkom.png') ?>">                
+                    </div>   
+                </div>
+                <div class="col-sm-2">
+                    <div class="card">
+                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-kemenhub.png') ?>">                
                     </div>   
                 </div>
             <!-- </div> -->
@@ -144,7 +166,7 @@
     </div>
 </section>
 
-<section class="secfour" id="secfour">
+<!-- <section class="secfour" id="secfour">
     <div class="container">
         <div class="row justify-content-center">
             <div class="title">
@@ -179,36 +201,79 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <section class="secfive" id="secfive">
     <div class="container">
         <div class="row justify-content-center">
             <div class="title">
-                <h1>Gallery</h1>
+                <h2>Galeri</h2>
+                <h1>Galeri dan Portofolio kami</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="tab">
+            <!-- <div class="tab">
                 <button class="tablinks" onclick="openCity(event, 'kapau')">D'Kapau</button>
                 <button class="tablinks" onclick="openCity(event, 'travel')">Mantiko Travel</button>
                 <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron Multimedia</button>
+            </div> -->
+            <div class="col-sm-3">
+                <select class="form-control">
+                    <option selected>Mantiko Travel</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
             </div>
         </div>
-        <div id="kapau" class="tabcontent">
-            <div class="row">
-                <div class="col-sm-3">
-                    <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <a href="#">
+                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+                        </a>
+                        <div class="thumbnail-body">
+                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <a href="#">
+                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
+                        </a>
+                        <div class="thumbnail-body">
+                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <a href="#">
+                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+                        </a>
+                        <div class="thumbnail-body">
+                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-3">
-                    <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
+            </div>
+            <div class="col-sm-3">
+                <div class="thumbnail">
+                    <div class="thumbnail-img">
+                        <a href="#">
+                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
+                        </a>
+                        <div class="thumbnail-body">
+                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,53 +284,42 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="title">
-                <h1>Contact Us</h1>
+                <h1>CONTACT</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>D'Kapau Nusantara</h4>
-                        <hr>
-                        <ul>
-                            <li>Email : kapau@gmail.com</li>
-                            <li>Whatsapp : 081219898999</li>
-                            <li>Jalan Panjang No. 22 Kav 21, Kembangan Jakarta Barat</li>
-                        </ul>
-                        <p>
-                    </div>
+            <div class="col-sm-12">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event, 'mantiko')">Mantiko Travel & Mice</button>
+                    <button class="tablinks" onclick="openCity(event, 'kakoto')">Kokoto</button>
+                    <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron</button>
+                    <button class="tablinks" onclick="openCity(event, 'mgi')">MGI Academy</button>
+                    <button class="tablinks" onclick="openCity(event, 'dkapau')">D'Kapau</button>
+                    <button class="tablinks" onclick="openCity(event, 'uf')">UF Enterprise</button>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>Mantiko Travel</h4>
-                        <hr>
-                        <ul>
-                            <li>Email : mantikotravel@gmail.com</li>
-                            <li>Whatsapp : 081219898999</li>
-                            <li>Jalan Panjang No. 22 Kav 21, Kembangan Jakarta Barat</li>
-                        </ul>
-                        <p>
+        </div>
+        <div class="tabcontent" id="mantiko">
+            <div class="row">
+            <!-- Tab content -->
+                <div class="col-sm-6">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f905a17f1089%3A0xe3ce35c5d04f04b4!2sJl.%20KH%20Hasyim%20Ashari%20No.108%2C%20RT.005%2FRW.003%2C%20Poris%20Plawad%20Utara%2C%20Kec.%20Cipondoh%2C%20Kota%20Tangerang%2C%20Banten%2015122!5e0!3m2!1sid!2sid!4v1668959701845!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h4>CV Vidtron Multimedia Indotama</h4>
-                        <hr>
+                <div class="col-sm-4">
+                    <div class="contact">
                         <ul>
-                            <li>Email : Vidtron@gmail.com</li>
-                            <li>Whatsapp : 081219898999</li>
-                            <li>Jalan Panjang No. 22 Kav 21, Kembangan Jakarta Barat</li>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>"></li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"></li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>"></li>
+                            <!-- <li><img src="<?php echo base_url('assets/img/mail.png')?>"></li> -->
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>"></li>
                         </ul>
-                        <p>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
     </div>
 </section>
@@ -274,23 +328,23 @@
 
 <script>
     function openCity(evt, cityName) {
-        // Declare all variables
-        var i, tabcontent, tablinks;
+    // Declare all variables
+    var i, tabcontent, tablinks;
 
-        // Get all elements with class="tabcontent" and hide them
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
 
-        // Get all elements with class="tablinks" and remove the class "active"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
 
-        // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
     }
 </script>

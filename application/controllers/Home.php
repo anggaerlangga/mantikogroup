@@ -33,7 +33,7 @@ class Home extends CI_Controller {
 		 $this->load->view('/common/header');
 		 $this->load->view('/common/banner', $banner);
 		 $this->load->view('/public/home');
-		//  $this->load->view('/common/footer');
+		 $this->load->view('/common/footer');
 
 	}
 }

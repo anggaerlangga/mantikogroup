@@ -13,9 +13,44 @@ class Company extends CI_Controller {
 		//  $banner["banner"] = $this->banner_model->getAll();
 
 		 $this->load->view('/common/header');
-		 $this->load->view('/common/banner', $banner);
 		 $this->load->view('/public/company');
 		//  $this->load->view('/common/footer');
 
+	}
+
+	public function mantikotravel()
+	{
+		$this->load->view('/common/header');
+		$this->load->view('/public/company/mantiko');
+	}
+
+	public function kakoto()
+	{
+		$this->load->view('/common/header');
+		$this->load->view('/public/company/kakoto');
+	}
+
+	public function vidtron()
+	{
+		$this->load->view('/common/header');
+		$this->load->view('/public/company/vidtron');
+	}
+
+	public function mgi()
+	{
+		$this->load->view('/common/header');
+		$this->load->view('/public/company/mgi');
+	}
+
+	public function dkapau()
+	{
+		$this->load->view('/common/header');
+		$this->load->view('/public/company/dkapau');
+	}
+
+	public function ufenterprise()
+	{
+		$this->load->view('/common/header');
+		$this->load->view('/public/company/ufenterprise');
 	}
 }

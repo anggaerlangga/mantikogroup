@@ -3,7 +3,7 @@
 
 <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-    <div class="sidebar-brand-text mx-3">Galactica</div>
+    <div class="sidebar-brand-text mx-3">Mantiko</div>
 </a>
 
 <!-- Divider -->
@@ -38,6 +38,29 @@
             <a class="collapse-item" href="<?php echo site_url('admin/content') ?>">Content</a>
             <a class="collapse-item" href="<?php echo site_url('admin/client') ?>">Client</a>
             <a class="collapse-item" href="<?php echo site_url('admin/contact') ?>">Contact</a>
+        </div>
+    </div>
+</li>
+
+<!-- Divider -->
+<hr class="sidebar-divider">
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapseThree"
+        aria-expanded="true" aria-controls="collapseThree">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Company Page</span>
+    </a>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <!-- <h6 class="collapse-header">Custom Master Data:</h6> -->
+            <a class="collapse-item" href="<?php echo site_url('admin/mantiko') ?>">Mantiko Group</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/vidtron') ?>">Vidtron</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/mgi') ?>">MGI</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/ufenterprise') ?>">UF Enterprise</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/kakoto') ?>">Kakoto</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/dkapau') ?>">D'Kapau</a>
         </div>
     </div>
 </li>

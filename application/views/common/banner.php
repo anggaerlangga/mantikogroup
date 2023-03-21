@@ -12,7 +12,7 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item-active">
-        <img class="d-block w-100" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>" alt="">
+        <img class="d-block w-100" src="<?php echo base_url('assets/img/seminar.jpeg') ?>" alt="">
     </div>
     <div class="carousel-item">
         <img class="d-block w-100" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>" alt="">
