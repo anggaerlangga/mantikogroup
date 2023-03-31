@@ -35,18 +35,24 @@
 
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('admin/villa_gallery/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
+						<a href="<?php echo site_url('admin/gallery/') ?>"><i class="fas fa-arrow-left"></i> Back</a>
 					</div>
 					<div class="card-body">
 
-						<form action="<?php echo site_url('admin/villa_gallery/proses') ?>" method="post" enctype="multipart/form-data" >
+						<form action="<?php echo site_url('admin/gallery/proses') ?>" method="post" enctype="multipart/form-data" >
 
 							<div class="form-group">
-								<label for="kode_villa">Kode Villa</label>
-								<input class="form-control <?php echo form_error('kode_villa') ? 'is-invalid':'' ?>"
-								 type="text" name="kode_villa" placeholder="kode_villa" />
+								<label for="product_id">Product</label>
+								<select class="form-control" name="product_id">
+								    <option value="001">Mantiko Travel</option>
+									<option value="002">Vidtron Multimedia</option>
+                                    <option value="003">MGI Academy</option>
+                                    <option value="004">UF Enterprise</option>
+                                    <option value="005">Kakoto</option>
+                                    <option value="006">D'Kapau Nusantara</option>
+								</select>
 								<div class="invalid-feedback">
-									<?php echo form_error('kode_villa') ?>
+									<?php echo form_error('product_id') ?>
 								</div>
 							</div>
 
@@ -88,6 +94,33 @@
 
                             <div class="form-group">
 								<label for="name">Photo 5</label>
+								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
+								 type="file" name="photo[]" />
+								<div class="invalid-feedback">
+									<?php echo form_error('photo') ?>
+								</div>
+                            </div>
+
+							<div class="form-group">
+								<label for="name">Photo 6</label>
+								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
+								 type="file" name="photo[]" />
+								<div class="invalid-feedback">
+									<?php echo form_error('photo') ?>
+								</div>
+                            </div>
+
+							<div class="form-group">
+								<label for="name">Photo 7</label>
+								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
+								 type="file" name="photo[]" />
+								<div class="invalid-feedback">
+									<?php echo form_error('photo') ?>
+								</div>
+                            </div>
+
+							<div class="form-group">
+								<label for="name">Photo 8</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">

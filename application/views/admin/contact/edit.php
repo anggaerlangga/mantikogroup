@@ -37,6 +37,21 @@
                     </div>
                     <div class="card-body">
                         <form action="" method="post" enctype="multipart/form-data">
+
+                            <div class="form-group">
+								<label for="product_id">Product</label>
+								<select class="form-control" name="product_id" value="<?php echo $contact->contact ?>">
+								    <option value="001">Mantiko Travel</option>
+									<option value="002">Vidtron Multimedia</option>
+                                    <option value="003">MGI Academy</option>
+                                    <option value="004">UF Enterprise</option>
+                                    <option value="005">Kakoto</option>
+                                    <option value="006">D'Kapau Nusantara</option>
+								</select>
+								<div class="invalid-feedback">
+									<?php echo form_error('product_id') ?>
+								</div>
+							</div>
                             <div class="form-group">
                                 <label for="phone">Phone</label>
                                 <input class="form-control <?php echo form_error('phone') ? 'is-invalid':'' ?>"

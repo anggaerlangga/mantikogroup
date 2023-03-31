@@ -7,6 +7,7 @@ class contact_model extends CI_Model
 
     // nama kolom di tabel
     public $contact_id;
+    public $product_id;
     public $phone;
     public $wa;
     public $email;
@@ -19,6 +20,9 @@ class contact_model extends CI_Model
             ['field' => 'contact_id',
             'label' => 'contact_id',
             'rules' => 'required'],
+
+            ['field' => 'product_id',
+            'label' => 'product_id'],
 
             ['field' => 'phone',
             'label' => 'phone'],
@@ -53,6 +57,7 @@ class contact_model extends CI_Model
     {
         $post = $this->input->post(); // ambil data dari form
         $this->contact_id = uniqid(); // membuat id unik
+        $this->product_id = $post["product_id"];
         $this->phone = $post["phone"];
         $this->wa = $post["wa"];
         $this->email = $post["email"]; 
@@ -65,7 +70,8 @@ class contact_model extends CI_Model
     public function update()
     {
         $post = $this->input->post();
-        $this->contact_id = $post["contact_id"]; 
+        $this->contact_id = $post["contact_id"];
+        $this->product_id = $post["product_id"]; 
         $this->phone = $post["phone"];
         $this->wa = $post["wa"];
         $this->email = $post["email"]; 

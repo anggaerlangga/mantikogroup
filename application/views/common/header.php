@@ -55,7 +55,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a class="nav-link" href="<?php echo site_url('/home#product') ?>">Produk</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo site_url('/home#article') ?>">Galeri</a>
+                            <a class="nav-link" href="<?php echo site_url('/home#secthree') ?>">Klien</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?php echo site_url('/home#secfive') ?>">Galeri</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Kontak</a>

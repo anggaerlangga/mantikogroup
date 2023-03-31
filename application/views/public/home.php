@@ -32,7 +32,7 @@
     </div>
 </section>
 
-<section class="sectwo">
+<section class="sectwo" id="product">
     <div class="container">
         <div class="row justify-content-center">
             <div class="title">
@@ -242,7 +242,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'mantiko')">Mantiko Travel & Mice</button>
+                    <button class="tablinks active" onclick="openCity(event, 'mantiko')">Mantiko Travel & Mice</button>
                     <button class="tablinks" onclick="openCity(event, 'kakoto')">Kokoto</button>
                     <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron</button>
                     <button class="tablinks" onclick="openCity(event, 'mgi')">MGI Academy</button>

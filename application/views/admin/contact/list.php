@@ -34,6 +34,7 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
+                                            <th>Product ID</th>
                                             <th>Phone</th>
                                             <th>Whatsapp</th>
                                             <th>Email</th>
@@ -45,6 +46,7 @@
                                     <tbody>
                                         <?php foreach ($contact as $contact): ?>
                                         <tr>
+                                            <td><?php echo $contact->product_id ?></td>
                                             <td><?php echo $contact->phone ?></td>
                                             <td><?php echo $contact->wa ?></td>
                                             <td><?php echo $contact->email ?></td>

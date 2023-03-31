@@ -33,80 +33,87 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/contact') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
+                        <a href="<?php echo site_url('admin/pages') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
                     </div>
                     <div class="card-body">
-                        <form action="<?php echo site_url('admin/contact/add') ?>" method="post" enctype="multipart/form-data" >
+                        <input type="hidden" name="product_id" value="001">
+                        
+                        <form action="<?php echo site_url('admin/pages/add') ?>" method="post" enctype="multipart/form-data" >
                             <div class="form-group">
-								<label for="product_id">Product</label>
-								<select class="form-control" name="product_id">
-								    <option value="001">Mantiko Travel</option>
-									<option value="002">Vidtron Multimedia</option>
-                                    <option value="003">MGI Academy</option>
-                                    <option value="004">UF Enterprise</option>
-                                    <option value="005">Kakoto</option>
-                                    <option value="006">D'Kapau Nusantara</option>
+                                <label for="lang">Language</label>
+                                <select class="form-control" name="lang">
+                                    <option value="ID">ID</option>
+								    <option value="EN">English</option>
 								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('lang') ?>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="title">Title</label>
+                                <input class="form-control <?php echo form_error('title') ? 'is-invalid':'' ?>"
+                                    type="text" name="title" placeholder="Title" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('title') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subtitle">Subtitle</label>
+                                <input class="form-control <?php echo form_error('subtitle') ? 'is-invalid':'' ?>"
+                                    type="text" name="subtitle" placeholder="Subtitle" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('subtitle') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
+                                    rows="4" cols="50" name="description" placeholder="Description"></textarea>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('description') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="meta_title">Meta Title</label>
+                                <input class="form-control <?php echo form_error('meta_title') ? 'is-invalid':'' ?>"
+                                    type="text" name="meta_title" placeholder="Meta Title" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('meta_title') ?>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="meta_description">Meta Description</label>
+                                <input class="form-control <?php echo form_error('meta_description') ? 'is-invalid':'' ?>"
+                                    type="text" name="meta_description" placeholder="Meta Desription" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('meta_description') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="url">URL</label>
+                                <input class="form-control <?php echo form_error('url') ? 'is-invalid':'' ?>"
+                                    type="text" name="url" placeholder="URL" />
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('url') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+								<label for="name">Photo</label>
+								<input class="form-control-file <?php echo form_error('image') ? 'is-invalid':'' ?>"
+								 type="file" name="image" />
 								<div class="invalid-feedback">
-									<?php echo form_error('product_id') ?>
+									<?php echo form_error('image') ?>
 								</div>
 							</div>
-                        
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input class="form-control <?php echo form_error('phone') ? 'is-invalid':'' ?>"
-                                    type="text" name="phone" placeholder="Phone" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('phone') ?>
-                                </div>
-                            </div>
 
-                            <div class="form-group">
-                                <label for="wa">Whatsapp</label>
-                                <input class="form-control <?php echo form_error('wa') ? 'is-invalid':'' ?>"
-                                    type="text" name="wa" placeholder="Whatsapp" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('wa') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input class="form-control <?php echo form_error('email') ? 'is-invalid':'' ?>"
-                                    type="text" name="email" placeholder="Email" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('email') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="ig">Instagram</label>
-                                <input class="form-control <?php echo form_error('ig') ? 'is-invalid':'' ?>"
-                                    type="text" name="ig" placeholder="Instagram" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('ig') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="address">Address</label>
-                                <input class="form-control <?php echo form_error('address') ? 'is-invalid':'' ?>"
-                                    type="text" name="address" placeholder="Address" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('address') ?>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="latitude">Latitude</label>
-                                <input class="form-control <?php echo form_error('latitude') ? 'is-invalid':'' ?>"
-                                    type="text" name="latitude" placeholder="Latitude" />
-                                <div class="invalid-feedback">
-                                    <?php echo form_error('latitude') ?>
-                                </div>
-                            </div>
-
-                            <input type="hidden" name="contact_id" value="abc" />
+                            <input type="hidden" name="page_id" value="abc" />
                             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <input class="btn btn-success" type="submit" name="btn" value="Save" />
                 

@@ -21,7 +21,7 @@
                 <!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?php echo site_url('admin/villa_gallery/create') ?>"><i class="fas fa-plus"></i> Add New</a>
+						<a href="<?php echo site_url('admin/gallery/create') ?>"><i class="fas fa-plus"></i> Add New</a>
 					</div>
 					<div class="card-body">
 
@@ -30,7 +30,7 @@
 								<thead>
 									<tr>
                                         <th>No</th>
-                                        <th>Kode Villa</th>
+                                        <th>Product ID</th>
                                         <th>Image</th>
 										<th>Action</th>
 									</tr>
@@ -39,21 +39,21 @@
                                 
                                 <?php 
                                     $no = 1;
-                                    foreach ($villa_gallery as $gallery): ?>
+                                    foreach ($gallery as $gallery): ?>
 									<tr>
                                         <td>
                                             <?php echo $no++; ?>
                                         </td>
 										<td width="150">
-											<?php echo $gallery->kode_villa ?>
+											<?php echo $gallery->product_id ?>
 										</td>
                                         <td>
-											<img src="<?php echo base_url('upload/villa/'.$gallery->photo) ?>" width="64" />
+											<img src="<?php echo base_url('upload/image/'.$gallery->photo) ?>" width="64" />
 										</td>
                                         <td>
-											<a href="<?php echo site_url('admin/villa_gallery/edit/'.$gallery->kode_villa) ?>"
-											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-											<a onclick="deleteConfirm('<?php echo site_url('admin/villa_gallery/delete/'.$gallery->villa_gallery_id) ?>')"
+											<!-- <a href="<?php echo site_url('admin/gallery/edit/'.$gallery->gallery_id) ?>"
+											 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a> -->
+											<a onclick="deleteConfirm('<?php echo site_url('admin/gallery/delete/'.$gallery->gallery_id) ?>')"
 											 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Hapus</a>
 										</td>
 									</tr>

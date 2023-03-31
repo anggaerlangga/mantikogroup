@@ -22,44 +22,50 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <h1 class="h3 mb-2 text-gray-800">Section Page Master Barang</h1>
+                <h1 class="h3 mb-2 text-gray-800">Section Page content</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/barang/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+                        <a href="<?php echo site_url('admin/pages/add') ?>"><i class="fas fa-plus"></i> Add New</a>
                     </div>
                         <div class="card-body">
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Barang ID</th>
-                                            <th>Category ID</th>
-                                            <th>Category Name</th>
-                                            <th>Nama Barang</th>
-                                            <th>Model</th>
-                                            <th>Size</th>
-                                            <th>Weight</th>
-                                            <th>Price</th>
+                                            <th>Page</th>
+                                            <th>Lang</th>
+                                            <th>Title</th>
+                                            <th>Subtitle</th>
+                                            <th>Description</th>
+                                            <th>Meta Title</th>
+                                            <th>Meta Description</th>
+                                            <th>URL</th>
+                                            <th>Image</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <?php foreach ($barang as $barang): ?>
+                                        <?php foreach ($pages as $pages): ?>
                                         <tr>
-                                            <td><?php echo $barang->barang_id ?></td>
-                                            <td><?php echo $barang->category_id ?></td>
-                                            <td><?php echo $barang->category_name ?></td>
-                                            <td><?php echo $barang->barang_name ?></td>
-                                            <td><?php echo $barang->model ?></td>
-                                            <td><?php echo $barang->size ?></td>
-                                            <td><?php echo $barang->weight ?></td>
-                                            <td><?php echo $barang->price ?></td>
+                                            <td><?php echo $pages->page_id ?></td>
+                                            <td><?php echo $pages->lang ?></td>
+                                            <td><?php echo $pages->title ?></td>
+                                            <td><?php echo $pages->subtitle ?></td>
+                                            <td><?php echo $pages->description ?></td>
+                                            <td><?php echo $pages->meta_title ?></td>
+                                            <td><?php echo $pages->meta_description ?></td>
+                                            <td><?php echo $pages->URL ?></td>
                                             <td>
-                                                <a href="<?php echo site_url('admin/barang/edit/'.$barang->barang_id) ?>"
+											    <img src="<?php echo base_url('upload/homepage/'.$pages->image) ?>" width="64" />
+										    </td>
+                                            <td>
+                                                <a href="<?php echo site_url('admin/pages/edit/'.$pages->page_id) ?>"
                                                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
-                                                <a onclick="deleteConfirm('<?php echo site_url('admin/barang/delete/'.$barang->barang_id) ?>')"
+                                                <!-- <a href="<?php echo site_url('admin/pages/edit/'.$pages->page_id) ?>"
+                                                class="btn btn-small"><i class="fas fa-search"></i> View</a> -->
+                                                <a onclick="deleteConfirm('<?php echo site_url('admin/pages/delete/'.$pages->page_id) ?>')"
                                                 href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i> Delete</a>
 										    </td>
                                         </tr>

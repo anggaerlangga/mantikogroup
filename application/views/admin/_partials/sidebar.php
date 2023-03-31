@@ -35,7 +35,8 @@
         <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Master Data:</h6> -->
             <a class="collapse-item" href="<?php echo site_url('admin/hero') ?>">Banner</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/content') ?>">Content</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/content') ?>">Home Page</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/gallery') ?>">Gallery</a>
             <a class="collapse-item" href="<?php echo site_url('admin/client') ?>">Client</a>
             <a class="collapse-item" href="<?php echo site_url('admin/contact') ?>">Contact</a>
         </div>
@@ -52,7 +53,7 @@
         <i class="fas fa-fw fa-folder"></i>
         <span>Company Page</span>
     </a>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Master Data:</h6> -->
             <a class="collapse-item" href="<?php echo site_url('admin/mantiko') ?>">Mantiko Group</a>
