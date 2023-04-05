@@ -170,28 +170,18 @@
         </div>
         <div class="row">
             <div class="col-sm-3">
-                <select class="form-control">
-                    <option selected>Mantiko Travel</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                <select class="form-control" id="galery_product">
+                    <option value="1" selected>Mantiko Travel</option>
+                    <option value="2">Vidtron Multimedia</option>
+                    <option value="3">MGI Academy</option>
+                    <option value="4">UF Enterprise</option>
+                    <option value="5">Kakoto</option>
+                    <option value="6">D'Kapau</option>
                 </select>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
-                <div class="thumbnail">
-                    <div class="thumbnail-img">
-                        <a href="#">
-                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
-                        </a>
-                        <div class="thumbnail-body">
-                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3" id="mantiko">
                 <div class="thumbnail">
                     <div class="thumbnail-img">
                         <a href="#">
@@ -203,23 +193,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3" id="vidtron">
                 <div class="thumbnail">
                     <div class="thumbnail-img">
                         <a href="#">
                             <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
-                        </a>
-                        <div class="thumbnail-body">
-                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="thumbnail">
-                    <div class="thumbnail-img">
-                        <a href="#">
-                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
                         </a>
                         <div class="thumbnail-body">
                             <h4 class="title"><a href="#">Lorem ipsum</a></h4>
@@ -268,6 +246,7 @@
                         </ul>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </section>
@@ -295,4 +274,17 @@
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
     }
+
+    $(document).ready(function(){
+        $('#vidtron').hide();
+        $('#galery_product').change(function(){
+            if($('#galery_product').val() == 1) {
+                $('#mantiko').fadeIn();
+                $('#vidtron').hide();
+            } else if($('#galery_product').val() == 2) {
+                $('#vidtron').fadeIn();
+                $('#mantiko').hide();
+            }
+        });
+    });
 </script>

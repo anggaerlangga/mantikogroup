@@ -33,7 +33,7 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/pages') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
+                        <a href="<?php echo site_url('admin/pages/mgi') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
                     </div>
                     <div class="card-body">
                         <form action="" method="post" enctype="multipart/form-data">
@@ -45,6 +45,18 @@
 								</select>
                                 <div class="invalid-feedback">
                                     <?php echo form_error('lang') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subpage">Subpage</label>
+                                <select class="form-control" name="subpage" value="<?php echo $pages->subpage ?>">
+                                    <option value="ABT">ABOUT MGI</option>
+								    <option value="PRD">PRODUCT MGI</option>
+                                    <option value="TIM">TIM MGI</option>
+								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('subpage') ?>
                                 </div>
                             </div>
 
@@ -113,6 +125,7 @@
 							</div>
 
                             <input type="hidden" name="page_id" value="<?php echo $pages->page_id ?>" />
+                            <input type="hidden" name="product_id" value="003">
                             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <input class="btn btn-success" type="submit" name="btn" value="Save" />
                 

@@ -21,6 +21,42 @@ class Pages extends CI_Controller
         $this->load->view("admin/pages/list", $data);
     }
 
+    public function mantiko()
+    {
+        $data["pages"] = $this->pages_model->getAllMantiko();
+        $this->load->view("admin/pages/list_mantiko", $data);
+    }
+
+    public function vidtron()
+    {
+        $data["pages"] = $this->pages_model->getAllVidtron();
+        $this->load->view("admin/pages/list_vidtron", $data);
+    }
+
+    public function mgi()
+    {
+        $data["pages"] = $this->pages_model->getAllMgi();
+        $this->load->view("admin/pages/list_mgi", $data);
+    }
+
+    public function uf()
+    {
+        $data["pages"] = $this->pages_model->getAllUf();
+        $this->load->view("admin/pages/list_uf", $data);
+    }
+
+    public function kakoto()
+    {
+        $data["pages"] = $this->pages_model->getAllKakoto();
+        $this->load->view("admin/pages/list_kakoto", $data);
+    }
+
+    public function kapau()
+    {
+        $data["pages"] = $this->pages_model->getAllKapau();
+        $this->load->view("admin/pages/list_kapau", $data);
+    }
+
     public function add_mantiko()
     {
         $pages = $this->pages_model; // objek model
@@ -107,7 +143,7 @@ class Pages extends CI_Controller
 
     public function edit_mantiko($id = null) // id data yang akan diedit
     {
-        if (!isset($id)) redirect('admin/pages'); // kita lakukan redirect ke route ini kalau $id bernilai null
+        if (!isset($id)) redirect('admin/pages/mantiko'); // kita lakukan redirect ke route ini kalau $id bernilai null
 
         $pages = $this->pages_model; // objek model
         $validation = $this->form_validation; // objek validation
@@ -126,7 +162,7 @@ class Pages extends CI_Controller
 
     public function edit_vidtron($id = null) // id data yang akan diedit
     {
-        if (!isset($id)) redirect('admin/pages'); // kita lakukan redirect ke route ini kalau $id bernilai null
+        if (!isset($id)) redirect('admin/pages/vidtron'); // kita lakukan redirect ke route ini kalau $id bernilai null
 
         $pages = $this->pages_model; // objek model
         $validation = $this->form_validation; // objek validation
@@ -145,7 +181,7 @@ class Pages extends CI_Controller
 
     public function edit_mgi($id = null) // id data yang akan diedit
     {
-        if (!isset($id)) redirect('admin/pages'); // kita lakukan redirect ke route ini kalau $id bernilai null
+        if (!isset($id)) redirect('admin/pages/mgi'); // kita lakukan redirect ke route ini kalau $id bernilai null
 
         $pages = $this->pages_model; // objek model
         $validation = $this->form_validation; // objek validation
@@ -164,7 +200,7 @@ class Pages extends CI_Controller
 
     public function edit_uf($id = null) // id data yang akan diedit
     {
-        if (!isset($id)) redirect('admin/pages'); // kita lakukan redirect ke route ini kalau $id bernilai null
+        if (!isset($id)) redirect('admin/pages/uf'); // kita lakukan redirect ke route ini kalau $id bernilai null
 
         $pages = $this->pages_model; // objek model
         $validation = $this->form_validation; // objek validation
@@ -183,7 +219,7 @@ class Pages extends CI_Controller
 
     public function edit_kakoto($id = null) // id data yang akan diedit
     {
-        if (!isset($id)) redirect('admin/pages'); // kita lakukan redirect ke route ini kalau $id bernilai null
+        if (!isset($id)) redirect('admin/pages/kakoto'); // kita lakukan redirect ke route ini kalau $id bernilai null
 
         $pages = $this->pages_model; // objek model
         $validation = $this->form_validation; // objek validation
@@ -202,7 +238,7 @@ class Pages extends CI_Controller
 
     public function edit_kapau($id = null) // id data yang akan diedit
     {
-        if (!isset($id)) redirect('admin/pages'); // kita lakukan redirect ke route ini kalau $id bernilai null
+        if (!isset($id)) redirect('admin/pages/kapau'); // kita lakukan redirect ke route ini kalau $id bernilai null
 
         $pages = $this->pages_model; // objek model
         $validation = $this->form_validation; // objek validation

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Galactica Web - Login</title>
+    <title>Mantiko Web - Login</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?php echo base_url('vendor/fontawesome-free/css/all.min.css') ?>" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
                             <div class="col-lg-12">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <img src="<?php echo base_url('assets/img/logo_header.png') ?>">
+                                        <img src="<?php echo base_url('assets/img/logo-footer.png') ?>">
                                     </div>
                                     <?php if($this->session->flashdata('message_login_error')): ?>
                                         <div class="invalid-feedback">

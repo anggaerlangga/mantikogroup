@@ -56,12 +56,12 @@
     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
             <!-- <h6 class="collapse-header">Custom Master Data:</h6> -->
-            <a class="collapse-item" href="<?php echo site_url('admin/mantiko') ?>">Mantiko Group</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/vidtron') ?>">Vidtron</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/mgi') ?>">MGI</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/ufenterprise') ?>">UF Enterprise</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/kakoto') ?>">Kakoto</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/dkapau') ?>">D'Kapau</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/pages/mantiko') ?>">Mantiko Group</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/pages/vidtron') ?>">Vidtron</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/pages/mgi') ?>">MGI</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/pages/uf') ?>">UF Enterprise</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/pages/kakoto') ?>">Kakoto</a>
+            <a class="collapse-item" href="<?php echo site_url('admin/pages/kapau') ?>">D'Kapau</a>
         </div>
     </div>
 </li>

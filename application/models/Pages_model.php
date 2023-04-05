@@ -8,6 +8,7 @@ class pages_model extends CI_Model
     // nama kolom di tabel
     public $page_id;
     public $product_id;
+    public $subpage;
     public $lang;
     public $title;
     public $subtitle;
@@ -25,6 +26,9 @@ class pages_model extends CI_Model
 
             ['field' => 'product_id',
             'label' => 'product_id'],
+
+            ['field' => 'subpage',
+            'label' => 'subpage'],
 
             ['field' => 'lang',
             'label' => 'lang'],
@@ -56,6 +60,42 @@ class pages_model extends CI_Model
         return $this->db->get($this->_table)->result();
     }
 
+    public function getAllMantiko() {
+       $product_id = '001';
+       $query = $this->db->get_where('ct_page', array('product_id' => $product_id));
+       return $query->result();
+    }
+
+    public function getAllVidtron() {
+        $product_id = '002';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id));
+        return $query->result();
+    }
+
+    public function getAllMgi() {
+        $product_id = '003';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id));
+        return $query->result();
+    }
+
+    public function getAllUf() {
+        $product_id = '004';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id));
+        return $query->result();
+    }
+
+    public function getAllKakoto() {
+        $product_id = '005';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id));
+        return $query->result();
+    }
+
+    public function getAllKapau() {
+        $product_id = '006';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id));
+        return $query->result();
+    }
+
    // public function getShortDesc() {
    //     $this->db->select('SUBSTRING(description, 1, 100), page_id, title, image', FALSE);
    //     $query = $this->db->get('page');
@@ -72,6 +112,7 @@ class pages_model extends CI_Model
         $post = $this->input->post(); // ambil data dari form
         $this->page_id = uniqid();
         $this->product_id = $post["product_id"];
+        $this->subpage = $post["subpage"];
         $this->lang = $post["lang"];
         $this->title = $post["title"];
         $this->subtitle = $post["subtitle"];
@@ -88,6 +129,7 @@ class pages_model extends CI_Model
         $post = $this->input->post();
         $this->page_id = $post["page_id"];
         $this->product_id = $post["product_id"];
+        $this->subpage = $post["subpage"];
         $this->lang = $post["lang"];
         $this->title = $post["title"];
         $this->subtitle = $post["subtitle"];

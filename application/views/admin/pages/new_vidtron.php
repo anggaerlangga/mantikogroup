@@ -33,12 +33,10 @@
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/pages') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
+                        <a href="<?php echo site_url('admin/pages/vidtron') ?>"><i class="fa fa-arrow-circle-left"></i>Back</a>
                     </div>
                     <div class="card-body">
-                        <input type="hidden" name="product_id" value="002">
-                        
-                        <form action="<?php echo site_url('admin/pages/add') ?>" method="post" enctype="multipart/form-data" >
+                        <form action="<?php echo site_url('admin/pages/add_vidtron') ?>" method="post" enctype="multipart/form-data" >
                             <div class="form-group">
                                 <label for="lang">Language</label>
                                 <select class="form-control" name="lang">
@@ -47,6 +45,18 @@
 								</select>
                                 <div class="invalid-feedback">
                                     <?php echo form_error('lang') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subpage">Subpage</label>
+                                <select class="form-control" name="subpage">
+                                    <option value="ABT">ABOUT VIDTRON</option>
+								    <option value="PRD">PRODUCT VIDTRON</option>
+                                    <option value="TIM">TIM VIDTRON</option>
+								</select>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('subpage') ?>
                                 </div>
                             </div>
                             
@@ -114,6 +124,7 @@
 							</div>
 
                             <input type="hidden" name="page_id" value="abc" />
+                            <input type="hidden" name="product_id" value="002">
                             <input type="hidden" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                             <input class="btn btn-success" type="submit" name="btn" value="Save" />
                 

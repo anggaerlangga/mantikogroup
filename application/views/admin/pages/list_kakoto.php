@@ -22,12 +22,12 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <h1 class="h3 mb-2 text-gray-800">Section Page content</h1>
+                <h1 class="h3 mb-2 text-gray-800">Section Page Kakoto</h1>
 
                 <!-- DataTales Example -->
                 <div class="card shadow mb-4">
                     <div class="card-header">
-                        <a href="<?php echo site_url('admin/pages/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+                        <a href="<?php echo site_url('admin/pages/add_kakoto') ?>"><i class="fas fa-plus"></i> Add New</a>
                     </div>
                         <div class="card-body">
                             <div class="table-responsive">
@@ -61,7 +61,7 @@
 											    <img src="<?php echo base_url('upload/homepage/'.$pages->image) ?>" width="64" />
 										    </td>
                                             <td>
-                                                <a href="<?php echo site_url('admin/pages/edit/'.$pages->page_id) ?>"
+                                                <a href="<?php echo site_url('admin/pages/edit_kakoto/'.$pages->page_id) ?>"
                                                 class="btn btn-small"><i class="fas fa-edit"></i> Edit</a>
                                                 <!-- <a href="<?php echo site_url('admin/pages/edit/'.$pages->page_id) ?>"
                                                 class="btn btn-small"><i class="fas fa-search"></i> View</a> -->
