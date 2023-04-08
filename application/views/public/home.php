@@ -6,17 +6,11 @@
             </div>
             <div class="col-sm-7">
                 <div class="title">
-                    <h1 style="color:#0984e3;">APA ITU</h1>
-                    <h1>MANTIKO GROUP INDONESIA</h1>
+                    <h1 style="color:#0984e3;"><?php echo $about->title ?></h1>
+                    <h1><?php echo $about->subtitle ?></h1>
                     <hr>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, 
-                   purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</br>
-                </p>
-                <p>   
-                Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-                Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem.
-                </p>
+                <p><?php echo $about->description ?></p>
                 <div class="btn-group">
                     <a href="#" class="btn btn-primary">Read More</a>
                 </div>
@@ -42,75 +36,24 @@
             </div>
         </div>
         <div class="row justify-content-center">
+        <?php
+            // foreach ($product->result() as $row) {
+            foreach ($product as $product): ?>
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/mantiko.png') ?>" alt="" class="img-responsive">
+                        <img src="<?php echo base_url('upload/homepage/'.$product->image) ?>" alt="" class="img-responsive">
                         <div class="card-title">
-                            <h3>Mantiko Travel & Mice</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+                            <h3><?php echo $product->title ?></h3>
+                            <p><?php echo $product->description ?></p>
                         </div>
                         <div class="btn-group">
-                            <a href="#" class="btn btn-primary" role="button">Lebih Detail</a>
+                            <a href="<?php echo $product->URL ?>" class="btn btn-primary" role="button">Lebih Detail</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/vidtron.png') ?>" alt="" class="img-responsive">
-                        <div class="card-title">
-                            <h3>Vidtron Multimedia Indotama</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/mgi.png') ?>" alt="" class="img-responsive">
-                        <div class="card-title">
-                            <h3>MGI Academy</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/uf-enterprise.png') ?>" alt="" class="img-responsive">
-                        <div class="card-title">
-                            <h3>UF Enterprise</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/kakoto.png') ?>" alt="" class="img-responsive">
-                        <div class="card-title">
-                            <h3>Kakoto</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="card">
-                    <div class="card-body">
-                        <img src="<?php echo base_url('assets/img/minang.png') ?>" alt="" class="img-responsive">
-                        <div class="card-title">
-                            <h3>D'Kapau Nusantara</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section> 
@@ -125,36 +68,14 @@
             </div>
         </div>
         <div class="row justify-content-center">
+            <?php
+                foreach ($client as $client): ?>
                 <div class="col-sm-2">
                     <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-bpn.png') ?>">   
+                        <img class="img-responsive" src="<?php echo base_url('upload/homepage/'.$client->image) ?>">   
                     </div>             
                 </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/bankdki.png') ?>">
-                    </div>                
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-koperasi.png') ?>">                
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-kemenkom.png') ?>">                
-                    </div>   
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-telkom.png') ?>">                
-                    </div>   
-                </div>
-                <div class="col-sm-2">
-                    <div class="card">
-                        <img class="img-responsive" src="<?php echo base_url('assets/img/logo-kemenhub.png') ?>">                
-                    </div>   
-                </div>
+                <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -181,23 +102,28 @@
             </div>
         </div>
         <div class="row">
+            <?php
+                foreach ($gallery_mantiko as $gallery_mantiko): ?>
             <div class="col-sm-3" id="mantiko">
                 <div class="thumbnail">
                     <div class="thumbnail-img">
                         <a href="#">
-                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
+                            <img class="img-responsive" src="<?php echo base_url('upload/image/'.$gallery_mantiko->photo) ?>">
                         </a>
                         <div class="thumbnail-body">
-                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+                            <h4 class="title"><a href="#"><?php echo $gallery_mantiko->title ?></a></h4>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3" id="vidtron">
+            <?php endforeach; ?>
+            <?php
+                foreach ($gallery_vidtron as $gallery_vidtron): ?>
+            <div class="col-sm-3"  id="vidtron">
                 <div class="thumbnail">
                     <div class="thumbnail-img">
                         <a href="#">
-                            <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+                            <img class="img-responsive" src="<?php echo base_url('upload/image/'.$gallery_vidtron->photo) ?>">
                         </a>
                         <div class="thumbnail-body">
                             <h4 class="title"><a href="#">Lorem ipsum</a></h4>
@@ -205,6 +131,7 @@
                     </div>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
@@ -221,7 +148,7 @@
             <div class="col-sm-12">
                 <div class="tab">
                     <button class="tablinks active" onclick="openCity(event, 'mantiko')">Mantiko Travel & Mice</button>
-                    <button class="tablinks" onclick="openCity(event, 'kakoto')">Kokoto</button>
+                    <button class="tablinks" onclick="openCity(event, 'kakoto')">Kakoto</button>
                     <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron</button>
                     <button class="tablinks" onclick="openCity(event, 'mgi')">MGI Academy</button>
                     <button class="tablinks" onclick="openCity(event, 'dkapau')">D'Kapau</button>
@@ -231,21 +158,24 @@
         </div>
         <div class="tabcontent" id="mantiko">
             <div class="row">
+            <!-- <?php
+                foreach ($contact_mantiko as $contact_mantiko): ?>     -->
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f905a17f1089%3A0xe3ce35c5d04f04b4!2sJl.%20KH%20Hasyim%20Ashari%20No.108%2C%20RT.005%2FRW.003%2C%20Poris%20Plawad%20Utara%2C%20Kec.%20Cipondoh%2C%20Kota%20Tangerang%2C%20Banten%2015122!5e0!3m2!1sid!2sid!4v1668959701845!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="<?php echo $contact_mantiko->latitude ?>" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="contact">
                         <ul>
-                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>"></li>
-                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"></li>
-                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>"></li>
-                            <li><img src="<?php echo base_url('assets/img/place.png')?>"></li>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>"><?php echo $contact_mantiko->phone ?></li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"><?php echo $contact_mantiko->wa ?></li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>"><?php echo $contact_mantiko->ig ?></li>
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>"><?php echo $contact_mantiko->address ?></li>
                         </ul>
                     </div>
                 </div>
+                <!-- <?php endforeach; ?> -->
             </div>
         </div>
     </div>

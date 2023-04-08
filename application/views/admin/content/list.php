@@ -41,6 +41,7 @@
                                             <th>Description</th>
                                             <th>Meta Title</th>
                                             <th>Meta Description</th>
+                                            <th>URL</th>
                                             <th>Image</th>
                                             <th>Action</th>
                                         </tr>
@@ -55,6 +56,7 @@
                                             <td><?php echo $content->description ?></td>
                                             <td><?php echo $content->meta_title ?></td>
                                             <td><?php echo $content->meta_description ?></td>
+                                            <td><?php echo $content->URL ?></td>
                                             <td>
 											    <img src="<?php echo base_url('upload/homepage/'.$content->image) ?>" width="64" />
 										    </td>

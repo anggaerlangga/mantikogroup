@@ -21,7 +21,13 @@ class Company extends CI_Controller {
 	public function mantikotravel()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/mantikotravel');
+		$this->load->model("pages_model");
+		$data["about"] = $this->pages_model->getAboutMantiko();
+		$data["product"] = $this->pages_model->getProductMantiko();
+		$data["tim"] = $this->pages_model->getTimMantiko();
+		$this->load->model("gallery_model");
+		$data["gallery"] = $this->gallery_model->getGalleryMantiko();
+		$this->load->view('/public/company/mantikotravel', $data);
 		$this->load->view('/common/footer');
 	}
 
@@ -35,7 +41,13 @@ class Company extends CI_Controller {
 	public function vidtron()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/vidtron');
+		$this->load->model("pages_model");
+		$data["about"] = $this->pages_model->getAboutVidtron();
+		$data["product"] = $this->pages_model->getProductVidtron();
+		$data["tim"] = $this->pages_model->getTimVidtron();
+		$this->load->model("gallery_model");
+		$data["gallery"] = $this->gallery_model->getGalleryVidtron();
+		$this->load->view('/public/company/vidtron', $data);
 	}
 
 	public function mgi()

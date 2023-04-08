@@ -81,9 +81,27 @@
                             <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
-                                    rows="4" cols="50" name="description" placeholder="Description"></textarea>
+                                    rows="4" cols="50" name="description" id="description" placeholder="Description"></textarea>
                                 <div class="invalid-feedback">
                                     <?php echo form_error('description') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description2">Description 2</label>
+                                <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
+                                    rows="4" cols="50" name="description2" id="description2" placeholder="Description"></textarea>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('description2') ?>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="description2">Description 2</label>
+                                <textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
+                                    rows="4" cols="50" name="description2" id="description2" placeholder="Description"></textarea>
+                                <div class="invalid-feedback">
+                                    <?php echo form_error('description2') ?>
                                 </div>
                             </div>
 
@@ -155,6 +173,8 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="<?php echo base_url('vendor/jquery/jquery.min.js') ?>"></script>
+    <script src="<?php echo base_url('vendor/tiny/tinymice.min.js') ?>"></script>
+    <script src="<?php echo base_url('vendor/tiny/tinymice.jquery.min.js') ?>"></script>
     <script src="<?php echo base_url('vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 
     <!-- Core plugin JavaScript-->
@@ -162,6 +182,30 @@
 
     <!-- Custom scripts for all pages-->
     <script src="<?php echo base_url('js/sb-admin-2.min.js') ?>"></script>
+    <script>
+      $('textarea#description').tinymce({
+        height: 500,
+        menubar: false,
+        plugins: [
+           'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
+           'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+           'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
+        ],
+        toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist checklist outdent indent | removeformat | code table help'
+      });
+    </script>
+    <script>
+      $('textarea#description2').tinymce({
+        height: 500,
+        menubar: false,
+        plugins: [
+           'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
+           'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+           'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
+        ],
+        toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist checklist outdent indent | removeformat | code table help'
+      });
+    </script>
 
 </body>
 

@@ -13,6 +13,7 @@ class pages_model extends CI_Model
     public $title;
     public $subtitle;
     public $description;
+    public $description2;
     public $meta_title;
     public $meta_description;
     public $url;
@@ -41,6 +42,9 @@ class pages_model extends CI_Model
 
             ['field' => 'description',
             'label' => 'description'],
+
+            ['field' => 'description2',
+            'label' => 'description2'],
 
             ['field' => 'meta_title',
             'label' => 'meta_title'],
@@ -96,6 +100,48 @@ class pages_model extends CI_Model
         return $query->result();
     }
 
+    public function getAboutMantiko() {
+        $product_id = '001';
+        $subpage = 'ABT';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getProductMantiko() {
+        $product_id = '001';
+        $subpage = 'PRD';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getTimMantiko() {
+        $product_id = '001';
+        $subpage = 'TIM';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getAboutVidtron() {
+        $product_id = '002';
+        $subpage = 'ABT';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getProductVidtron() {
+        $product_id = '002';
+        $subpage = 'PRD';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getTimVidtron() {
+        $product_id = '002';
+        $subpage = 'TIM';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
    // public function getShortDesc() {
    //     $this->db->select('SUBSTRING(description, 1, 100), page_id, title, image', FALSE);
    //     $query = $this->db->get('page');
@@ -116,7 +162,8 @@ class pages_model extends CI_Model
         $this->lang = $post["lang"];
         $this->title = $post["title"];
         $this->subtitle = $post["subtitle"];
-        $this->description = $post["description"]; 
+        $this->description = $post["description"];
+        $this->description2 = $post["description2"]; 
         $this->meta_title = $post["meta_title"];
         $this->meta_description = $post["meta_description"];
         $this->url = $post["url"];
@@ -134,6 +181,7 @@ class pages_model extends CI_Model
         $this->title = $post["title"];
         $this->subtitle = $post["subtitle"];
         $this->description = $post["description"]; 
+        $this->description2 = $post["description2"];
         $this->meta_title = $post["meta_title"];
         $this->meta_description = $post["meta_description"];
         $this->url = $post["url"];

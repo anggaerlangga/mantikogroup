@@ -48,6 +48,63 @@ class contact_model extends CI_Model
         return $this->db->get($this->_table)->result();
     }
 
+    public function getContactMantiko()
+    {
+        $product_id = "001";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        //  print_r($query);
+        return $query->result();
+    }
+
+    public function getContactVidtron()
+    {
+        $product_id = "002";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getContactMgi()
+    {
+        $product_id = "003";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getContactUf()
+    {
+        $product_id = "004";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getContactKakoto()
+    {
+        $product_id = "005";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getContactKapau()
+    {
+        $product_id = "006";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+
+
+
     public function getById($id)
     {
         return $this->db->get_where($this->_table, ["contact_id" => $id])->row();

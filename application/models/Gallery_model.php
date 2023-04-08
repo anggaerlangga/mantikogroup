@@ -31,6 +31,67 @@ class gallery_model extends CI_Model
         // method ini akan mengembalikan sebuah objek
     }
 
+    public function getGalleryMantiko()
+    {
+        $product_id = "001";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getGalleryVidtron()
+    {
+        $product_id = "002";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getGalleryMgi()
+    {
+        $product_id = "003";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getGalleryUf()
+    {
+        $product_id = "004";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getGalleryKakoto()
+    {
+        $product_id = "005";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+
+    public function getGalleryKapau()
+    {
+        $product_id = "006";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('product_id'=>$product_id));
+        // print_r($query);
+        return $query->result();
+    }
+
     public function delete($id)
     {
         $this->_deleteImage($id);

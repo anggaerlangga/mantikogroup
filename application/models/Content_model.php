@@ -12,8 +12,10 @@ class content_model extends CI_Model
     public $title;
     public $subtitle;
     public $description;
+    public $description2;
     public $meta_title;
     public $meta_description;
+    public $URL;
     public $image = "default.jpg";
 
     public function rules() {
@@ -37,11 +39,17 @@ class content_model extends CI_Model
             ['field' => 'description',
             'label' => 'description'],
 
+            ['field' => 'description2',
+            'label' => 'description2'],
+
             ['field' => 'meta_title',
             'label' => 'meta_title'],
 
             ['field' => 'meta_description',
             'label' => 'meta_description'],
+
+            ['field' => 'URL',
+            'label' => 'URL'],
 
             ['field' => 'image',
             'label' => 'image']
@@ -63,6 +71,66 @@ class content_model extends CI_Model
         return $this->db->get_where($this->_table, ["content_id" => $id])->row();
     }
 
+    public function getAboutByPageId()
+    {
+        $page_id = "ABOUT";
+        // $response = array();
+        // $this->db->select('*');
+        // $this->db->where('page_id',$page_id['page_id']);
+        // $q - $this-$db->get('content');
+        // $response = $q->result_array();
+
+        // return $response;
+        return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+
+    }
+
+    public function getProductByPageId()
+    {
+        $page_id = "PRODUCT";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('page_id'=>$page_id));
+        // print_r($query);
+        return $query->result();
+    }
+
+    public function getFounderStory()
+    {
+        $page_id = "FOSO";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('page_id' => $page_id));
+        return $query->result();
+    }
+
+    public function getStructure()
+    {
+        $page_id = "STRUCTURE";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('page_id' => $page_id));
+        return $query->result();
+    }
+
+    public function getCsr()
+    {
+        $page_id = "CSR";
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('page_id' => $page_id));
+        return $query->result();
+    }
+
+    public function getClientByPageId()
+    {
+        $page_id = "CLIENT";
+        // return $this->db->get_where($this->_table, ["page_id" => $page_id])->row();
+        $this->db->select('*');
+        $query = $this->db->get_where($this->_table, array('page_id'=>$page_id));
+        // print_r($query);
+        return $query->result();
+    }
+    
+
+
     public function save() 
     {
         $post = $this->input->post(); // ambil data dari form
@@ -71,9 +139,11 @@ class content_model extends CI_Model
         $this->lang = $post["lang"];
         $this->title = $post["title"];
         $this->subtitle = $post["subtitle"];
-        $this->description = $post["description"]; 
+        $this->description = $post["description"];
+        $this->description2 = $post["description2"]; 
         $this->meta_title = $post["meta_title"];
         $this->meta_description = $post["meta_description"];
+        $this->URL = $post["URL"];
         $this->image = $this->_uploadImage();
         return $this->db->insert($this->_table, $this); // simpan ke database
     }
@@ -86,9 +156,11 @@ class content_model extends CI_Model
         $this->lang = $post["lang"];
         $this->title = $post["title"];
         $this->subtitle = $post["subtitle"];
-        $this->description = $post["description"]; 
+        $this->description = $post["description"];
+        $this->description2 = $post["description2"]; 
         $this->meta_title = $post["meta_title"];
         $this->meta_description = $post["meta_description"];
+        $this->URL = $post["URL"];
 
         if (!empty($_FILES["image"]["name"])) {
             $this->image = $this->_uploadImage();
@@ -105,7 +177,7 @@ class content_model extends CI_Model
         $config['allowed_types']        = 'gif|jpg|jpeg|png';
         $config['file_name']            = $this->content_id;
         $config['overwrite']			= true;
-        $config['max_size']             = 3024; // 1MB
+        $config['max_size']             = 10024; // 1MB
         // $config['max_width']            = 1024;
         // $config['max_height']           = 768;
 

@@ -9,6 +9,10 @@ class About extends CI_Controller {
 
     public function index()
 	{
+		$this->load->model("content_model");
+		$data["founder"] = $this->content_model->getFounderStory();
+		$data["structure"] = $this->content_model->getStructure();
+		$data["csr"] = $this->content_model->getCsr();
 		 /*$this->load->model("product_model");
 		 $data["product"] = $this->product_model->getByCategoryId($category_id);
 		 $this->load->model("category_model");
@@ -29,7 +33,7 @@ class About extends CI_Controller {
 		//  )
 
 		 $this->load->view('/common/header');
-		 $this->load->view('/public/about');
+		 $this->load->view('/public/about', $data);
 		 $this->load->view('/common/footer');
 
 	}

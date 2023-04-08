@@ -27,26 +27,17 @@
       <div class="col-sm-5">
         <img src="<?php echo base_url('assets/img/maniko-deskripsi.png') ?>" class="img-responsive">
       </div>
+      <?php 
+          foreach ($about as $about): ?>
       <div class="col-sm-7">
         <div class="logo">
-          <img src="<?php echo base_url('assets/img/mantiko.png') ?>" class="img-responsive">     
+          <img src="<?php echo base_url('upload/homepage/'.$about->image) ?>" class="img-responsive">     
         </div>
-        <p>Mantiko Travel & Mice adalah travel agent
-            berkembang yang berada di dalam naungan
-            PT Mantiko Alam Indonesia. Didirkan oleh Fedri
-            Ramadhani SST,M.Par, seorang public figure
-            berdarah minang berdomisili Jakarta</p>
-        <p>Mantiko dibentuk dari kecintaannya menjadi pemandu
-            wisata muda dari tahun 2010. Fedri memantapkan dirinya
-            dengan melanjutkan pendidikan level SLTA hingga S2 dibidang parawisata
-            Sehingga berdirilah Mantiko Travel & MICE sebagai bentuk pengaplikasian ilmu
-            dan pengalamannya di dunia kerja maupun di akademik.</p>
+        <p><?php echo $about->description ?></p>
       </div>
+      <?php endforeach; ?>
       <div class="col-sm-12">
-        <p>sebagai sebuah perusahaan yang berada didalam naungan Mantiko Group Indonesia, 
-            kami hadir dengan konsep milenial modern dan siap bersaing dengan travel agent
-            besar lainna di Jakarta.
-            Mengutamkan produk - produk kekinian dan go digital, dengan targe 1000 event / tour pertahunnya.</p>
+        <p><?php echo $about->description2 ?></p>
       </div>
     </div>
   </div>
@@ -61,28 +52,21 @@
       </div>
     </div>
     <div class="row justify-content-center">
+    <?php
+            // foreach ($product->result() as $row) {
+        foreach ($product as $product): ?>
       <div class="col-sm-4">
         <div class="card">
           <div class="card-body">
-            <img src="<?php echo base_url('assets/img/sewamobil.png') ?>" alt="" class="img-responsive">
+            <img src="<?php echo base_url('upload/homepage/'.$product->image) ?>" alt="" class="img-responsive">
             <div class="card-title">
-              <h3>TIKET, TOUR & TRANSPORTASI</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+              <h3><?php echo $product->title ?></h3>
+              <p><?php echo $product->description ?></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="<?php echo base_url('assets/img/seminarkit.jpg') ?>" alt="" class="img-responsive">
-            <div class="card-title">
-              <h3>SEMINAR KIT</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -96,36 +80,15 @@
       </div>
     </div>
     <div class="row justify-content-center">
+    <?php
+            // foreach ($product->result() as $row) {
+        foreach ($tim as $tim): ?>
       <div class="col-sm-4">
         <div class="avatar">
-          <img src="<?php echo base_url('assets/img/PT Yudanto.png')?>" class="img-responsive">
+          <img src="<?php echo base_url('upload/homepage/'.$tim->image) ?>" class="img-responsive">
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="avatar">
-          <img src="<?php echo base_url('assets/img/PT Fedri.png')?>" class="img-responsive">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="avatar">
-          <img src="<?php echo base_url('assets/img/PT Buyan.png')?>" class="img-responsive">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="avatar">
-          <img src="<?php echo base_url('assets/img/PT Putri.png')?>" class="img-responsive">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="avatar">
-          <img src="<?php echo base_url('assets/img/PT Mustika.png')?>" class="img-responsive">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="avatar">
-          <img src="<?php echo base_url('assets/img/PT Mireri.png')?>" class="img-responsive">
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -141,54 +104,22 @@
       </div>
     </div> 
     <div class="row">
+    <?php
+        // foreach ($product->result() as $row) {
+        foreach ($gallery as $gallery): ?>
       <div class="col-sm-3">
         <div class="thumbnail">
           <div class="thumbnail-img">
             <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+              <img class="img-responsive" src="<?php echo base_url('upload/image/'.$gallery->photo) ?>">
             </a>
             <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+              <h4 class="title"><a href="#"><?php echo $gallery->title ?></a></h4>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="thumbnail">
-          <div class="thumbnail-img">
-            <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
-            </a>
-            <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="thumbnail">
-          <div class="thumbnail-img">
-            <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
-            </a>
-            <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="thumbnail">
-          <div class="thumbnail-img">
-            <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
-            </a>
-            <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div> 
   </div>
 </section>
