@@ -187,8 +187,7 @@
         ],
         toolbar: 'undo redo | a11ycheck casechange blocks | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist checklist outdent indent | removeformat | code table help'
       });
-    </script>
-    <script>
+
       $('textarea#description2').tinymce({
         height: 500,
         menubar: false,

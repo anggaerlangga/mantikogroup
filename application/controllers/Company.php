@@ -34,7 +34,13 @@ class Company extends CI_Controller {
 	public function kakoto()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/kakoto');
+		$this->load->model("pages_model");
+		$data["about"] = $this->pages_model->getAboutKakoto();
+		$data["product"] = $this->pages_model->getProductKakoto();
+		$data["tim"] = $this->pages_model->getTimKakoto();
+		$this->load->model("gallery_model");
+		$data["gallery"] = $this->gallery_model->getGalleryMgi();
+		$this->load->view('/public/company/kakoto', $data);
 		$this->load->view('/common/footer');
 	}
 
@@ -48,24 +54,45 @@ class Company extends CI_Controller {
 		$this->load->model("gallery_model");
 		$data["gallery"] = $this->gallery_model->getGalleryVidtron();
 		$this->load->view('/public/company/vidtron', $data);
+		$this->load->view('/common/footer');
 	}
 
 	public function mgi()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/mgi');
+		$this->load->model("pages_model");
+		$data["about"] = $this->pages_model->getAboutMgi();
+		$data["product"] = $this->pages_model->getProductMgi();
+		$data["tim"] = $this->pages_model->getTimMgi();
+		$this->load->model("gallery_model");
+		$data["gallery"] = $this->gallery_model->getGalleryMgi();
+		$this->load->view('/public/company/mgi', $data);
 		$this->load->view('/common/footer');
 	}
 
-	public function dkapau()
+	public function kapau()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/dkapau');
+		$this->load->model("pages_model");
+		$data["about"] = $this->pages_model->getAboutKapau();
+		$data["product"] = $this->pages_model->getProductKapau();
+		$data["tim"] = $this->pages_model->getTimKapau();
+		$this->load->model("gallery_model");
+		$data["gallery"] = $this->gallery_model->getGalleryKapau();
+		$this->load->view('/public/company/dkapau', $data);
+		$this->load->view('/common/footer');
 	}
 
 	public function ufenterprise()
 	{
 		$this->load->view('/common/header');
-		$this->load->view('/public/company/ufenterprise');
+		$this->load->model("pages_model");
+		$data["about"] = $this->pages_model->getAboutUf();
+		$data["product"] = $this->pages_model->getProductUf();
+		$data["tim"] = $this->pages_model->getTimUf();
+		$this->load->model("gallery_model");
+		$data["gallery"] = $this->gallery_model->getGalleryUf();
+		$this->load->view('/public/company/ufenterprise', $data);
+		$this->load->view('/common/footer');
 	}
 }

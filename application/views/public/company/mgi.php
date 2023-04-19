@@ -1,6 +1,7 @@
 <link href="<?php echo base_url('assets/css/company.css') ?>" rel="stylesheet">
 
 <div id="banner-area" class="banner-area">
+<img src="<?php echo base_url('assets/img/banner-mgi.png'); ?>" class="img-responsive">
   <div class="banner-text">
     <div class="container">
         <div class="row">
@@ -26,14 +27,15 @@
       <div class="col-sm-5">
         <img src="<?php echo base_url('assets/img/mgi-desk.png') ?>" class="img-responsive">
       </div>
+      <?php
+          foreach ($about as $about): ?>
       <div class="col-sm-7">
         <div class="logo">
-          <img src="<?php echo base_url('assets/img/mgi.png') ?>" class="img-responsive">     
+          <img src="<?php echo base_url('upload/homepage/'.$about->image) ?>" class="img-responsive">     
         </div>
-        <p>Sebuah sekolah seni yang didirikan pada tanggal 5 November 2022.
-            MGI Academy bertujuan untuk menghasilkan SDM yang ahli dibidang seni khususnya seperti seni tari, musik dan vocal, 
-            motivator dan trainer.</p>
+        <p><?php echo $about->description ?></p>
       </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -47,25 +49,60 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="<?php echo base_url('assets/img/sewamobil.png') ?>" alt="" class="img-responsive">
-            <div class="card-title">
-              <h3>REFLEXY</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
+      <div class="col-sm-12">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/teambuilding.png') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>TIM BUILDING</h3>
+                        <p>Team kami akan menyuguhkan berbagai macam permainan yang bisa membangun kerjasama dan keakraban antar peserta team building. Tujuan team building ini akan membangkitkan rasa peduli, saling memberi, saling menghargai, dan saling memberi apresisasi</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/taripendet.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>TARI PENDET</h3>
+                        <p>Keunikan budaya Indonesia berupa seni tari perlu di tampilkan untuk pembukaan dan pengisi setiap kegiatan. Para dancer MGI akan mengisi kegiatan anda dengan berbagai pilihan tari-tarian  tradisional dari berbagai daerah di seluruh wilayah Indonesia.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/Motivator.png') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>MOTIVATOR</h3>
+                        <p>Motivator MGI akan memberikan pelatihan yang bertujuan untuk pengembangan diri, meningkatkan motivasi dalam diri, saling kerjasama, saling membantu. Dan berbagai macam hal-hal positif yang membawa dampak baik untuk peserta training.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="<?php echo base_url('assets/img/seminarkit.jpg') ?>" alt="" class="img-responsive">
-            <div class="card-title">
-              <h3>FULL BODY MASSAGE</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est.</p>
-            </div>
+          <!-- End of carousel inner -->
           </div>
         </div>
       </div>
@@ -81,20 +118,22 @@
                 <h1>TRAINER TALENT KAMI</h1>
             </div>
         </div>
+        <?php
+          foreach ($tim as $tim): ?>
         <div class="card-coach">
           <div class="row justify-content-center">
             <div class="col-sm-4">
-              <img class="mr-3" src="<?php echo base_url('assets/img/uda.png') ?>" alt="Generic placeholder image">
+              <img class="mr-3" src="<?php echo base_url('upload/homepage/'.$tim->image) ?>" alt="Generic placeholder image">
             </div>
             <div class="col-sm-8">
               <div class="card-coach-body">
-                <h4 class="mt-0">Media heading</h4>
-                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. 
-                    Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                <h4 class="mt-0"><?php echo $tim->title ?></h4>
+                <p><?php echo $tim->description ?></p>
               </div>
             </div>
           </div>
         </div>
+        <?php endforeach; ?>
     </div>
   </div>
 </section>
@@ -109,54 +148,21 @@
       </div>
     </div> 
     <div class="row">
+      <?php
+          foreach ($gallery as $gallery): ?>
       <div class="col-sm-3">
         <div class="thumbnail">
           <div class="thumbnail-img">
             <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
+              <img class="img-responsive" src="<?php echo base_url('upload/image/'.$gallery->photo) ?>">
             </a>
             <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+              <h4 class="title"><a href="#"><?php echo $gallery->title ?></a></h4>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-3">
-        <div class="thumbnail">
-          <div class="thumbnail-img">
-            <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
-            </a>
-            <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="thumbnail">
-          <div class="thumbnail-img">
-            <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark2.jpg') ?>">
-            </a>
-            <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-3">
-        <div class="thumbnail">
-          <div class="thumbnail-img">
-            <a href="#">
-              <img class="img-responsive" src="<?php echo base_url('assets/img/pexels-mark1.jpg') ?>">
-            </a>
-            <div class="thumbnail-body">
-              <h4 class="title"><a href="#">Lorem ipsum</a></h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div> 
   </div>
 </section>

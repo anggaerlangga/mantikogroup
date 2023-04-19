@@ -147,7 +147,7 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="tab">
-                    <button class="tablinks active" onclick="openCity(event, 'mantiko')">Mantiko Travel & Mice</button>
+                    <button class="tablinks" onclick="openCity(event, 'London')">Mantiko Travel & Mice</button>
                     <button class="tablinks" onclick="openCity(event, 'kakoto')">Kakoto</button>
                     <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron</button>
                     <button class="tablinks" onclick="openCity(event, 'mgi')">MGI Academy</button>
@@ -156,26 +156,23 @@
                 </div>
             </div>
         </div>
-        <div class="tabcontent" id="mantiko">
+        <div id="mantiko" class="tabcontent">
             <div class="row">
-            <!-- <?php
-                foreach ($contact_mantiko as $contact_mantiko): ?>     -->
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="<?php echo $contact_mantiko->latitude ?>" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="contact">
                         <ul>
-                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>"><?php echo $contact_mantiko->phone ?></li>
-                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"><?php echo $contact_mantiko->wa ?></li>
-                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>"><?php echo $contact_mantiko->ig ?></li>
-                            <li><img src="<?php echo base_url('assets/img/place.png')?>"><?php echo $contact_mantiko->address ?></li>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>"></li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"></li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>"></li>
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Ir. H. Juanda 2, gg.kingkit 2/2 RT 012 / 004, Kel. kebon kelapa kec. Gambir - Jakarta Pusat</li>
                         </ul>
                     </div>
                 </div>
-                <!-- <?php endforeach; ?> -->
             </div>
         </div>
     </div>

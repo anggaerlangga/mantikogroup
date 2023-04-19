@@ -1,6 +1,7 @@
 <link href="<?php echo base_url('assets/css/company.css') ?>" rel="stylesheet">
 
 <div id="banner-area" class="banner-area">
+<img src="<?php echo base_url('assets/img/baner-abou.png'); ?>" class="img-responsive">
   <div class="banner-text">
     <div class="container">
         <div class="row">
@@ -48,24 +49,67 @@
     <div class="row justify-content-center">
       <div class="title">
         <h2>PRODUK & LAYANAN</h2>
-        <h1>VIDTRON MULTIMEDIA</h1>
+        <h1>VIDTRON MULTIMEDIA INDOTAMA</h1>
       </div>
     </div>
     <div class="row justify-content-center">
-    <?php
-        foreach ($product as $product): ?>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="<?php echo base_url('upload/homepage/'.$product->image) ?>" alt="" class="img-responsive">
-            <div class="card-title">
-              <h3><?php echo $product->title ?></h3>
-              <p><?php echo $product->description ?></p>
+      <div class="col-sm-12">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/virtualmeeting.png') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>VIRTUAL MEETING</h3>
+                        <p>Kegiatan pertemuan yang dibuat secara online dan dibantu dengan berbagai meeting tools yang lengkap dengan crew yang profesional. Kami akan membuat kegiatan diskusi, seminar, teleconfrence dan meeting</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/photobooth.png') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>BACKDROP PHOTOBOTH</h3>
+                        <p>Kami menyediakan berbagai jenis photoboth, mulai dari backdrop photoboth, photoboth custom, spin 360 dan videobooth.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/lighting.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>LIGHTING</h3>
+                        <p>Jenis - jenis pencahayaan yang kamu miliki dapat menerangi dan menyorot objek utama di panggung. Dan warna-warni dari lighting yang kami punya akan menghiasi panggung dan menjadikan suatu event menjadi menarik</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          <!-- End of carousel inner -->
           </div>
         </div>
       </div>
-      <?php endforeach; ?>
     </div>
   </div>
 </section>

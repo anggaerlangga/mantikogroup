@@ -438,6 +438,9 @@
   border-radius: 8px;
 }
 
+.secfive .container .row .col-sm-3 select.form-control option {
+  background: transparent;
+}
 /* Style the tab */
 /* .secfive .container .row .tab {
   overflow: hidden;
@@ -566,7 +569,7 @@
   border: none;
 }
 
-button {
+.tab button {
   background-color: inherit;
   float: left;
   border: none;

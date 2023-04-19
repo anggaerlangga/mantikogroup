@@ -142,6 +142,98 @@ class pages_model extends CI_Model
         return $query->result();
      }
 
+     public function getAboutMgi() {
+        $product_id = '003';
+        $subpage = 'ABT';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getProductMgi() {
+        $product_id = '003';
+        $subpage = 'PRD';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getTimMgi() {
+        $product_id = '003';
+        $subpage = 'TIM';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getAboutUf() {
+        $product_id = '004';
+        $subpage = 'ABT';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getProductUf() {
+        $product_id = '004';
+        $subpage = 'PRD';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getTimUf() {
+        $product_id = '004';
+        $subpage = 'TIM';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getAboutKakoto() {
+        $product_id = '005';
+        $subpage = 'ABT';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getProductKakoto() {
+        $product_id = '005';
+        $subpage = 'PRD';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getTimKakoto() {
+        $product_id = '005';
+        $subpage = 'TIM';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getAboutKapau() {
+        $product_id = '006';
+        $subpage = 'ABT';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getProductKapau() {
+        $product_id = '006';
+        $subpage = 'PRD';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+     public function getTimKapau() {
+        $product_id = '006';
+        $subpage = 'TIM';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
+
+    //  public function getPriceKakoto() {
+    //     $product_id = '005';
+    //     $subpage = 'TIM';
+    //     $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+    //     return $query->result();
+    //  }
+
    // public function getShortDesc() {
    //     $this->db->select('SUBSTRING(description, 1, 100), page_id, title, image', FALSE);
    //     $query = $this->db->get('page');

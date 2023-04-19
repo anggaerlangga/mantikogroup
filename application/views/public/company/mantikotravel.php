@@ -1,6 +1,10 @@
 <link href="<?php echo base_url('assets/css/company.css') ?>" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <div id="banner-area" class="banner-area">
+  <img src="<?php echo base_url('assets/img/banner-maniko.png'); ?>" class="img-responsive">
   <div class="banner-text">
     <div class="container">
         <div class="row">
@@ -52,21 +56,50 @@
       </div>
     </div>
     <div class="row justify-content-center">
-    <?php
-            // foreach ($product->result() as $row) {
-        foreach ($product as $product): ?>
-      <div class="col-sm-4">
-        <div class="card">
-          <div class="card-body">
-            <img src="<?php echo base_url('upload/homepage/'.$product->image) ?>" alt="" class="img-responsive">
-            <div class="card-title">
-              <h3><?php echo $product->title ?></h3>
-              <p><?php echo $product->description ?></p>
-            </div>
+      <div class="col-sm-12">
+        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#blogCarousel" data-slide-to="1"></li>
+          </ol>
+          <!-- Carousel Inner -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/sewamobil.png') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>Tiket Tour & Transportasi</h3>
+                        <p>Kami menyediakan berbagai paket tour untuk berbagai kebutuhan, seperti incentive tour, Study Tour, Family Tour, Private Tour, Honey-moon Tour, dan paket tour lainnya, baik di destinasi alam, sejarah dan budaya dan permintaan khusus lain.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/seminarkit.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>Seminar Kit</h3>
+                        <p>Seminar kit adalah souvenir yang diberikan oleh suatu event, sebagai kenang-kenangan yang dapat membuat audiens mengingat kembali event tersebut</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+            </div> 
+          <!-- End of carousel inner -->
           </div>
         </div>
       </div>
-      <?php endforeach; ?>
     </div>
   </div>
 </section>
