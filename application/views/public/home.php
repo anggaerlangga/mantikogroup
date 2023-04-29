@@ -1,10 +1,10 @@
 <section class="about" id="about">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-sm-5">
+            <div class="col-sm-5" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                 <img src="<?php echo base_url('assets/img/mantikogroup.png') ?>" class="img-responsive" />
             </div>
-            <div class="col-sm-7">
+            <div class="col-sm-7" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="title">
                     <h1 style="color:#0984e3;"><?php echo $about->title ?></h1>
                     <h1><?php echo $about->subtitle ?></h1>
@@ -18,7 +18,7 @@
         </div>
         <div class="row" style="float:right;">
             <div class="whatsapp">
-                <a href="https://wa.me/6281281268286?text=Hi+!+Apakah+barang+yang+dijual+di+Website+Galactica+tersedia+?">
+                <a href="https://wa.me/6281235038508?text=Hi+!+Saya+ingin+bertanya+mengenai+produk+Mantiko+Group+yang+diinformasikan+di+Website?">
                     <img src="<?php echo base_url('assets/img/Asset 26.png') ?>" class="img-responsive" />
                 </a>
             </div>
@@ -29,7 +29,7 @@
 <section class="sectwo" id="product">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h2>PRODUK</h2>
                 <h1>Produk & Layanan kami</h1>
                 <hr>
@@ -39,7 +39,7 @@
         <?php
             // foreach ($product->result() as $row) {
             foreach ($product as $product): ?>
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="card">
                     <div class="card-body">
                         <img src="<?php echo base_url('upload/homepage/'.$product->image) ?>" alt="" class="img-responsive">
@@ -61,7 +61,7 @@
 <section class="secthree" id="secthree">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h2>KLIEN</h2>
                 <h1>Klien - klien kami</h1>
                 <hr>
@@ -70,7 +70,7 @@
         <div class="row justify-content-center">
             <?php
                 foreach ($client as $client): ?>
-                <div class="col-sm-2">
+                <div class="col-sm-2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card">
                         <img class="img-responsive" src="<?php echo base_url('upload/homepage/'.$client->image) ?>">   
                     </div>             
@@ -83,14 +83,14 @@
 <section class="secfive" id="secfive">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h2>Galeri</h2>
                 <h1>Galeri dan Portofolio kami</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <select class="form-control" id="galery_product">
                     <option value="1" selected>Mantiko Travel</option>
                     <option value="2">Vidtron Multimedia</option>
@@ -104,7 +104,7 @@
         <div class="row">
             <?php
                 foreach ($gallery_mantiko as $gallery_mantiko): ?>
-            <div class="col-sm-3" id="mantiko">
+            <div class="col-sm-3" id="mantiko" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="thumbnail">
                     <div class="thumbnail-img">
                         <a href="#">
@@ -119,7 +119,7 @@
             <?php endforeach; ?>
             <?php
                 foreach ($gallery_vidtron as $gallery_vidtron): ?>
-            <div class="col-sm-3"  id="vidtron">
+            <div class="col-sm-3" id="vidtron" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="thumbnail">
                     <div class="thumbnail-img">
                         <a href="#">
@@ -139,14 +139,14 @@
 <section class="secsix" id="secsix">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h1>CONTACT</h1>
                 <hr>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <div class="tab">
+                <div class="tab" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <button class="tablinks" onclick="openCity(event, 'satu')">Mantiko Travel & Mice</button>
                     <button class="tablinks" onclick="openCity(event, 'dua')">Kakoto</button>
                     <button class="tablinks" onclick="openCity(event, 'tiga')">Vidtron</button>
@@ -158,12 +158,12 @@
         </div>
         <div id="satu" class="tabcontent">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8419656233075!2d106.82804046601122!3d-6.16613446933582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd868e1a25%3A0x19ba387a159483fb!2sMantiko%20Travel!5e0!3m2!1sid!2sid!4v1682043794207!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-4" data-aos="fade-right" data-aos-duration="800" data-aos-delay="400">
                     <div class="contact">
                         <ul>
                             <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 812-3503-8508</li>
@@ -179,7 +179,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7232032499037!2d106.80346796936627!3d-6.16780834675792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f790a62206ed%3A0xa1bea7118d42c906!2sKAKOTO%20REFLEKSI%20%26%20MASSAGE!5e0!3m2!1sid!2sid!4v1682047956642!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -198,7 +198,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7232032499037!2d106.80346796936627!3d-6.16780834675792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f790a62206ed%3A0xa1bea7118d42c906!2sKAKOTO%20REFLEKSI%20%26%20MASSAGE!5e0!3m2!1sid!2sid!4v1682047956642!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -217,7 +217,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8419656233075!2d106.82804046601122!3d-6.16613446933582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd868e1a25%3A0x19ba387a159483fb!2sMantiko%20Travel!5e0!3m2!1sid!2sid!4v1682043794207!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -236,7 +236,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8419656233075!2d106.82804046601122!3d-6.16613446933582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd868e1a25%3A0x19ba387a159483fb!2sMantiko%20Travel!5e0!3m2!1sid!2sid!4v1682043794207!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -255,7 +255,7 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="maps">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.8419656233075!2d106.82804046601122!3d-6.16613446933582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5cd868e1a25%3A0x19ba387a159483fb!2sMantiko%20Travel!5e0!3m2!1sid!2sid!4v1682043794207!5m2!1sid!2sid" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-sm-4">

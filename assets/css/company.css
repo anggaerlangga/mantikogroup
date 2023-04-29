@@ -381,6 +381,10 @@
   background: #fff;
 }
 
+.galeri .container .row .col-sm-3 {
+  margin-top: 30px;
+}
+
 .galeri .container .row .col-sm-3 .thumbnail {
   display: flex;
   align-items: stretch;
@@ -2227,6 +2231,20 @@
     left: 50%;
     width: 250px;
     transform: translate(-50%, -50%);
+  }
+
+  .galeri .container .row .col-sm-3 .thumbnail .thumbnail-img .thumbnail-body {
+    background-color: rgba(241, 241, 241, 0.959);
+    opacity: 80%;
+    position: absolute;
+    bottom: -30px;
+    width: 201px;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all ease-in-out 0.5s;
   }
 }
 
