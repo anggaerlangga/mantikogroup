@@ -147,16 +147,16 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')">Mantiko Travel & Mice</button>
-                    <button class="tablinks" onclick="openCity(event, 'kakoto')">Kakoto</button>
-                    <button class="tablinks" onclick="openCity(event, 'vidtron')">Vidtron</button>
-                    <button class="tablinks" onclick="openCity(event, 'mgi')">MGI Academy</button>
-                    <button class="tablinks" onclick="openCity(event, 'dkapau')">D'Kapau</button>
-                    <button class="tablinks" onclick="openCity(event, 'uf')">UF Enterprise</button>
+                    <button class="tablinks" onclick="openCity(event, 'satu')">Mantiko Travel & Mice</button>
+                    <button class="tablinks" onclick="openCity(event, 'dua')">Kakoto</button>
+                    <button class="tablinks" onclick="openCity(event, 'tiga')">Vidtron</button>
+                    <button class="tablinks" onclick="openCity(event, 'empat')">MGI Academy</button>
+                    <button class="tablinks" onclick="openCity(event, 'lima')">D'Kapau</button>
+                    <button class="tablinks" onclick="openCity(event, 'enam')">UF Enterprise</button>
                 </div>
             </div>
         </div>
-        <div id="mantiko" class="tabcontent">
+        <div id="satu" class="tabcontent">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="maps">
@@ -166,10 +166,105 @@
                 <div class="col-sm-4">
                     <div class="contact">
                         <ul>
-                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>"></li>
-                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>"></li>
-                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>"></li>
-                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Ir. H. Juanda 2, gg.kingkit 2/2 RT 012 / 004, Kel. kebon kelapa kec. Gambir - Jakarta Pusat</li>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 812-3503-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>">0812-3503-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>">mantikotravel.mice</li> 
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Ir. H. Juanda 2, gg.kingkit 2 No.2 RT 012 / 004, Kel. kebon kelapa kec. Gambir - Jakarta Pusat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="dua" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <ul>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 821-1339-0529</li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>">0821-1339-0529</li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>">kakotorefleksi.jkt</li> 
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Biak No.23, Cideng, Gambir, Jakarta Pusat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tiga" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <ul>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 821-1339-0529</li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>">0821-1339-0529</li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>">-</li> 
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Biak No.23, Cideng, Gambir, Jakarta Pusat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="empat" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <ul>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 821-2350-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>">0821-2350-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>">mgiacademyofficial</li> 
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Ir. H. Juanda 2, gg.kingkit 2 No.2 RT 012 / 004, Kel. kebon kelapa kec. Gambir - Jakarta Pusat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lima" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <ul>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 812-3503-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>">0812-3503-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>">-</li> 
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Ir. H. Juanda 2, gg.kingkit 2 No.2 RT 012 / 004, Kel. kebon kelapa kec. Gambir - Jakarta Pusat</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="enam" class="tabcontent">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.221011281177!2d106.667814!3d-6.190216!3m2" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <ul>
+                            <li><img src="<?php echo base_url('assets/img/telephone.png')?>">+62 812-3503-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/whatsapp.png')?>">0812-3503-8508</li>
+                            <li><img src="<?php echo base_url('assets/img/instagram.png')?>">-</li> 
+                            <li><img src="<?php echo base_url('assets/img/place.png')?>">Jl. Ir. H. Juanda 2, gg.kingkit 2 No.2 RT 012 / 004, Kel. kebon kelapa kec. Gambir - Jakarta Pusat</li>
                         </ul>
                     </div>
                 </div>
