@@ -198,6 +198,13 @@ class pages_model extends CI_Model
         return $query->result();
      }
 
+     public function getPriceKakoto() {
+        $product_id = '005';
+        $subpage = 'PRC';
+        $query = $this->db->get_where('ct_page', array('product_id' => $product_id, 'subpage' => $subpage));
+        return $query->result();
+     }
+
      public function getTimKakoto() {
         $product_id = '005';
         $subpage = 'TIM';

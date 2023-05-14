@@ -12,7 +12,7 @@
                 </div>
                 <p><?php echo $about->description ?></p>
                 <div class="btn-group">
-                    <a href="#" class="btn btn-primary">Read More</a>
+                    <a href="/about" class="btn btn-primary">Read More</a>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                 <hr>
             </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row">
         <?php
             // foreach ($product->result() as $row) {
             foreach ($product as $product): ?>
@@ -126,7 +126,7 @@
                             <img class="img-responsive" src="<?php echo base_url('upload/image/'.$gallery_vidtron->photo) ?>">
                         </a>
                         <div class="thumbnail-body">
-                            <h4 class="title"><a href="#">Lorem ipsum</a></h4>
+                            <h4 class="title"><a href="#"><?php echo $gallery_mantiko->title ?></a></h4>
                         </div>
                     </div>
                 </div>

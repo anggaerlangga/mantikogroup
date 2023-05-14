@@ -29,7 +29,10 @@
             </div>
             <div class="desc">
               <h4>PT Mantiko Group Indonesia</h4>
-              <p>adalah perusahaan yang didirikan oleh anak muda kelahiran padang</p>
+              <p>adalah salah satu holding company yang didirikan oleh Fedri Ramadhani, SST, M.Par sejak tahun 2020.
+                Mantiko Group Indonesia memayungi beberapa unit usaha yang bergerah di bidang Travel Agent, Event Organizer, Restoran, Catering,
+                Sentra Refleksi dan Massage, Dekorasi Wedding, Penyewaan Videotron dan Sekolah Seni.
+              </p>
             </div>
           </div>
         </div>

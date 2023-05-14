@@ -38,6 +38,7 @@ class Company extends CI_Controller {
 		$data["about"] = $this->pages_model->getAboutKakoto();
 		$data["product"] = $this->pages_model->getProductKakoto();
 		$data["tim"] = $this->pages_model->getTimKakoto();
+		$data["price"] = $this->pages_model->getPriceKakoto();
 		$this->load->model("gallery_model");
 		$data["gallery"] = $this->gallery_model->getGalleryKakoto();
 		$this->load->view('/public/company/kakoto', $data);

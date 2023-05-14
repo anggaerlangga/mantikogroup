@@ -297,6 +297,10 @@
   padding: 70px 50px 100px;
 }
 
+.price .menu .col-sm-12 img {
+  width: 100%;
+}
+
 .team {
   /* margin-top: 150px; */
   background: #e0e0e0;
@@ -389,6 +393,7 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  margin: 15px 0px;
 }
 
 .galeri .container .row .col-sm-3 .thumbnail .thumbnail-img img {
@@ -1558,7 +1563,7 @@
   }
   
   .galeri .container .row .col-sm-3 .thumbnail .thumbnail-img img {
-    width: 100%;
+    width: 295px;
     height: 100%;
     object-fit: cover;
     object-position: center;

@@ -7,15 +7,15 @@
         <div class="row">
           <div class="col-lg-12">
               <div class="banner-heading">
-                <h1 class="banner-title">PRODUCT</h1>
+                <h1 class="banner-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">PRODUCT</h1>
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center">
+                    <ol class="breadcrumb justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                       <li class="breadcrumb-item"><a href="#">PRODUCT</a></li>
                       <li class="breadcrumb-item active" aria-current="page">MGI ACADEMY</li>
                     </ol>
                 </nav>
               </div>
-          </div><!-- Col end -->
+          </div><!-- Col end --> 
         </div><!-- Row end -->
     </div><!-- Container end -->
   </div><!-- Banner text end -->
@@ -24,12 +24,12 @@
 <section class="about-mantiko" id="about-mantiko">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-sm-5">
+      <div class="col-sm-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <img src="<?php echo base_url('assets/img/mgi-desk.png') ?>" class="img-responsive">
       </div>
       <?php
           foreach ($about as $about): ?>
-      <div class="col-sm-7">
+      <div class="col-sm-7" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <div class="logo">
           <img src="<?php echo base_url('upload/homepage/'.$about->image) ?>" class="img-responsive">     
         </div>
@@ -43,7 +43,7 @@
 <section class="product">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="title">
+      <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <h2>PRODUK & LAYANAN</h2>
         <h1>MGI ACADEMY</h1>
       </div>
@@ -60,7 +60,7 @@
             <div class="carousel-item active">
               <div class="row justify-content-center">
                 <div class="col-sm-4">
-                  <div class="card">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
                         <img src="<?php echo base_url('assets/img/teambuilding.png') ?>">
@@ -74,7 +74,7 @@
                 </div>
 
                 <div class="col-sm-4">
-                  <div class="card">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
                         <img src="<?php echo base_url('assets/img/taripendet.jpg') ?>">
@@ -88,7 +88,7 @@
                 </div>
 
                 <div class="col-sm-4">
-                  <div class="card">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
                         <img src="<?php echo base_url('assets/img/Motivator.png') ?>">
@@ -113,14 +113,14 @@
 <section class="coach">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h2>COACH</h2>
                 <h1>TRAINER TALENT KAMI</h1>
             </div>
         </div>
         <?php
           foreach ($tim as $tim): ?>
-        <div class="card-coach">
+        <div class="card-coach" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
           <div class="row justify-content-center">
             <div class="col-sm-4">
               <img class="mr-3" src="<?php echo base_url('upload/homepage/'.$tim->image) ?>" alt="Generic placeholder image">
@@ -141,7 +141,7 @@
 <section class="galeri" id="galeri">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="title">
+      <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
         <h2>GALERI</h2>
         <h1>Galeri Kegiatan Kami</h1>
         <hr>
@@ -151,7 +151,7 @@
       <?php
           foreach ($gallery as $gallery): ?>
       <div class="col-sm-3">
-        <div class="thumbnail">
+        <div class="thumbnail" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
           <div class="thumbnail-img">
             <a href="#">
               <img class="img-responsive" src="<?php echo base_url('upload/image/'.$gallery->photo) ?>">

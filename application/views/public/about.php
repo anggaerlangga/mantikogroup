@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
           <div class="col-lg-12">
-              <div class="banner-heading">
+              <div class="banner-heading" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h1 class="banner-title">ABOUT</h1>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb justify-content-center">
@@ -23,7 +23,7 @@
 <section class="about-founder" id="about-founder">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h1>FOUNDER STORY</h1>
                 <hr>
             </div>
@@ -32,12 +32,12 @@
         <?php
             foreach ($founder as $founder): ?>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="founder-img">
                         <img src="<?php echo base_url('upload/homepage/'.$founder->image) ?>" class="img-responsive">
                     </div>
                 </div>
-                <div class="col-sm-8">
+                <div class="col-sm-8" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <p><?php echo $founder->description ?></p>
                 </div>
             </div>
@@ -54,7 +54,7 @@
 <section class="about-structure" id="about-structure">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h2>STRUKTUR</h2>
                 <h1>STRUKTUR ORGANISASI</h1>
                 <hr>
@@ -63,7 +63,7 @@
         <div class="row justify-content-center">
         <?php
             foreach ($structure as $structure): ?>
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="avatar">
                     <img src="<?php echo base_url('upload/homepage/'.$structure->image) ?>" class="img-responsive">
                 </div>
@@ -76,7 +76,7 @@
 <section class="csr" id="csr">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title">
+            <div class="title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <h2>CSR</h2>
                 <h1>CORPORATE SOCIAL RESPONSIBILITY</h1>
                 <hr>
@@ -85,7 +85,7 @@
         <div class="row">
         <?php
             foreach ($csr as $csr): ?>
-            <div class="col-sm-4">
+            <div class="col-sm-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                 <div class="csr-collection">
                     <img src="<?php echo base_url('upload/homepage/'.$csr->image) ?>" class="img-responsive">
                     <h4></h4>
