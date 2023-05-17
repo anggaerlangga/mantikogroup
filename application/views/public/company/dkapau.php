@@ -67,7 +67,7 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/lunchbox.jpg') ?>">
+                        <img src="<?php echo base_url('assets/img/lunch_box.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>LUNCH / DINNER BOX</h3>
@@ -81,7 +81,7 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/prasmanan.jpg') ?>">
+                        <img src="<?php echo base_url('assets/img/catering.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>BUFFEE / PRASMANAN</h3>
@@ -95,7 +95,7 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/snackbox.jpg') ?>">
+                        <img src="<?php echo base_url('assets/img/snack_box.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>SNACK BOX</h3>

@@ -25,7 +25,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-        <img src="<?php echo base_url('assets/img/mgi-desk.png') ?>" class="img-responsive">
+        <img src="<?php echo base_url('assets/img/mgi_profile.jpg') ?>" class="img-responsive">
       </div>
       <?php
           foreach ($about as $about): ?>
@@ -63,7 +63,7 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/teambuilding.png') ?>">
+                        <img src="<?php echo base_url('assets/img/tim_building.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>TIM BUILDING</h3>
@@ -77,10 +77,10 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/taripendet.jpg') ?>">
+                        <img src="<?php echo base_url('assets/img/dance.jpg') ?>">
                       </a>
                       <div class="card-title">
-                        <h3>TARI PENDET</h3>
+                        <h3>TARI</h3>
                         <p>Keunikan budaya Indonesia berupa seni tari perlu di tampilkan untuk pembukaan dan pengisi setiap kegiatan. Para dancer MGI akan mengisi kegiatan anda dengan berbagai pilihan tari-tarian  tradisional dari berbagai daerah di seluruh wilayah Indonesia.</p>
                       </div>
                     </div>
@@ -91,11 +91,12 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/Motivator.png') ?>">
+                        <img src="<?php echo base_url('assets/img/public_speaker.jpg') ?>">
                       </a>
                       <div class="card-title">
-                        <h3>MOTIVATOR</h3>
-                        <p>Motivator MGI akan memberikan pelatihan yang bertujuan untuk pengembangan diri, meningkatkan motivasi dalam diri, saling kerjasama, saling membantu. Dan berbagai macam hal-hal positif yang membawa dampak baik untuk peserta training.</p>
+                        <h3>PUBLIC SPEAKER</h3>
+                        <p>Kami menyediakan kelas publik speaking untuk meningkatkan percaya diri di tempat bekerja, atau untuk sebuah profesi seperti MC, Journalist, Marketer, Leader. Dengan trainer handal dan memiliki jam terbang tinggi, serta ternama di Indonesia. 
+                          Selain Public speaking, kami juga menyediakan Motivator Senior Indonesia dengan berbagai fokus bidang, seperti Excellent Services, Team Work, Motivasi Kerja, Personal Branding, Muhasabah dan lain sebagainya.</p>
                       </div>
                     </div>
                   </div>
@@ -103,6 +104,23 @@
               </div>
             </div>
           <!-- End of carousel inner -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/vocal_musik.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>VOCAL & MUSIK</h3>
+                        <p>MGI Academy Juga memiliki group Vokal dan Band yang siap memeriahkan acara penting anda. Singer kami dengan penampilan spektakuler adalah jebolan ajang pencarian bakat di Indonesia akan menjadi pengisi musik selama event anda berlangsung. Selain Full Band, MGI Academy juga siap untuk perfom dalam formal Akustik, Solo Singer, Orkestra, DJ, Bahkan Musik Tradisional.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

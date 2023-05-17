@@ -29,7 +29,7 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-sm-5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-        <img src="<?php echo base_url('assets/img/kako-desk.png') ?>" class="img-responsive">
+        <img src="<?php echo base_url('assets/img/kakoto_profile.jpg') ?>" class="img-responsive">
       </div>
       <?php
           foreach ($about as $about): ?>
@@ -71,11 +71,13 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/kakoo1.png') ?>">
+                        <img src="<?php echo base_url('assets/img/refleksi.png') ?>">
                       </a>
                       <div class="card-title">
-                        <h3>REFLEXY</h3>
-                        <p>Pijit reflexy merupakan metode pijit atau urut yang berfokus pada titik di bagian kaki,tangan dqn telinga.</p>
+                        <h3>REFLEKSI</h3>
+                        <p>Pijat refleksi merupakan salah satu teknik pengobatan tradisional yang berasal dari Tiongkok dan Mesir. 
+                          Berbeda dengan metode pijat atau urut biasa, pijat refleksi berfokus pada titik tertentu di bagian tubuh, seperti kaki, tangan, dan telinga.
+                          Ahli pengobatan tradisional meyakini bahwa titik-titik tersebut berhubungan dengan semua saraf organ internal di tubuh, sehingga dapat mendeteksi sekaligus mengobati berbagai penyakit.</p>
                       </div>
                     </div>
                   </div>
@@ -85,11 +87,13 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/kakoo2.png') ?>">
+                        <img src="<?php echo base_url('assets/img/body_massage.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>FULL BODY MASSAGE</h3>
-                        <p>Full body masage ini dapat meredakan rasa nyeri punggun,meningkatkan kualitas tidur hingga melawan rasa letih.</p>
+                        <p>Body massage atau melakukan pijatan pada tubuh adalah kata yang paling menggairahkan, karena itu membuat tubuh menjadi rileks, nyaman dan menyegarkan.
+                        Salah satu cara alami untuk mengurangi stres dan rasa sakit dengan pijat memberikan kenyamanan mental dan fisik, selain itu dapat meningkatkan sirkulasi darah, meningkatkan kekebalan tubuh, Meremjakan indra, membantu tidur dan istirahat anda lebih nyenyak.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -99,11 +103,14 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/kakoo3.png') ?>">
+                        <img src="<?php echo base_url('assets/img/thai_massage.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>THAI MASSAGE</h3>
-                        <p>Thai massage menggunakan teknik peregangan,penarikandan gerakan seperti yoga.manfaatnya untuk meredakan sakit kepala,mengurangi sakit punggung,meredakan nyeri sendi dan otot dll.</p>
+                        <p>Thai massage dinilai efektif dalam membantu pemulihan otot yang mengalami cedera, nyeri, atau kaku saat bergerak. 
+                          Sejumlah penelitian juga membuktikan manfaat ini pada penderita radang sendi lutut dan osteoartritis lutut.
+                          Sedikit berbeda dengan pijat pada umumnya yang mengharuskan Anda diam berbaring tengkurap, pijatan Thai massage akan membuat Anda ikut bergerak aktif bergonta-ganti posisi. 
+                          Bahkan badan Anda mungkin juga ditarik ke sana-sini oleh terapis pijat. </p>
                       </div>
                     </div>
                   </div>
@@ -117,11 +124,12 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/kakoo1.png') ?>">
+                        <img src="<?php echo base_url('assets/img/totok_wajah.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>TOTOK WAJAH</h3>
-                        <p>merupakan metode pengobatan dengan memberikan tekanan di titik titik tertentu pada wajah dan memberikan manfaat bagi kesehatan dan kecentikan.</p>
+                        <p>Totok wajah merupakan metode pengobatan dengan memberikan tekanan di titik-titik tertentu pada wajah. 
+                          Praktik yang juga disebut acupressure ini bisa melancarkan aliran darah dan meredakan ketegangan, sehingga bisa memberikan manfaat baik untuk kesehatan dan kecantikan, seperti mengurangi stress, mengatasi sakit kepala, mengatasi Mata lelah, Memperbaiki Gejala Bell’s Palsy, dan lain sebagainya.</p>
                       </div>
                     </div>
                   </div>
@@ -135,7 +143,7 @@
                       </a>
                       <div class="card-title">
                         <h3>LULUR</h3>
-                        <p>Bermanfaat untuk mengangkat sel kulit mati yang akan terlihat kusam dan membuat kulit lebih cerah.</p>
+                        <p>Lulur atau body scrub juga bertujuan untuk membuka pori-pori sehingga kulit menjadi lebih cerah dan putih. Manfaat lain yang dapat diperoleh dari proses luluran adalah mengencangkan kulit, menghilangkan penyakit kulit, menghilangkan bau badan dan menenangkan syaraf dan pikiran</p>
                       </div>
                     </div>
                   </div>
@@ -145,11 +153,11 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/hotstone.jpg') ?>">
+                        <img src="<?php echo base_url('assets/img/hot_stone.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>HOT STONE</h3>
-                        <p>Merupakan terapi pijit menggunakan batu panas yang bertujuan meredakan otot tegang lebih rileksdan memperbaiki jaringan yang rusak di tubuh.</p>
+                        <p>Pijat hot stone termasuk metode yang efektif untuk menghilangkan kepenatan pikiran. Beberapa penelitian telah membuktikan bahwa pijatan mengurangi stres dan kecemasan sekaligus meningkatkan kesehatan jantung.</p>
                       </div>
                     </div>
                   </div>
@@ -167,7 +175,8 @@
                       </a>
                       <div class="card-title">
                         <h3>BEKAM</h3>
-                        <p>adalah suatu metode  pemgobatan yang dilakukan dengan cara menyedot keluar darah kotor manfaatny adalah membuang racun, angin, kolestrol, melancarkan peredaran darah serta mengatasi demam.</p>
+                        <p>Terapi bekam merupakan salah satu pengobatan alternatif dari Timur Tengah dan Tiongkok yang telah dipraktikkan sejak ribuan tahun silam. Jenis terapi ini sering kali digunakan untuk meredakan rasa sakit di bagian tubuh tertentu.
+Terapi bekam dilakukan menggunakan cangkir khusus yang dapat menghasilkan tekanan, sehingga mampu menarik kulit dan mengeluarkan racun atau darah kotor. Cangkir tersebut biasanya diletakkan di bagian tubuh tertentu, seperti punggung, perut, lengan, bokong, atau kaki. terapi ini dapat mengatasi beberapa penyakit lokal atau sistematik</p>
                       </div>
                     </div>
                   </div>
@@ -181,7 +190,8 @@
                       </a>
                       <div class="card-title">
                         <h3>KOP/KERIK</h3>
-                        <p>Selain untuk meredakan masuk angin KOP/KERIK juga bermanfaat untuk meredakan migrain, mengatasi nyeri leher serta membuat tidur lebih nyenyak.</p>
+                        <p>Pengobatan alternatif untuk mengusir masuk angin ini dilakukan dengan cara mengerok logam ke permukaan kulit punggung yang telah dilumuri balsem atau minyak terlebih dahulu.
+Tidak hanya membantu mengusir masuk angin, kerik juga mempunyai beberapa manfaat yang dapat meredakan gejala beberapa penyakit seperti sakit kepala, Pembengkakan payudara, gejala sindrom perimenoupause, nyeri leher dan lain lain.</p>
                       </div>
                     </div>
                   </div>

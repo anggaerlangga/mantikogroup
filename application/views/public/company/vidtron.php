@@ -67,7 +67,7 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/virtualmeeting.png') ?>">
+                        <img src="<?php echo base_url('assets/img/virtual_meeting.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>VIRTUAL MEETING</h3>
@@ -81,10 +81,10 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/photobooth.png') ?>">
+                        <img src="<?php echo base_url('assets/img/photobooth.jpg') ?>">
                       </a>
                       <div class="card-title">
-                        <h3>BACKDROP PHOTOBOTH</h3>
+                        <h3>PHOTO VIDEOBOTH</h3>
                         <p>Kami menyediakan berbagai jenis photoboth, mulai dari backdrop photoboth, photoboth custom, spin 360 dan videobooth.</p>
                       </div>
                     </div>
@@ -100,6 +100,40 @@
                       <div class="card-title">
                         <h3>LIGHTING</h3>
                         <p>Jenis - jenis pencahayaan yang kamu miliki dapat menerangi dan menyorot objek utama di panggung. Dan warna-warni dari lighting yang kami punya akan menghiasi panggung dan menjadikan suatu event menjadi menarik</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/soundsystem.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>SOUNDSYTEM</h3>
+                        <p>Kami menggunakan Alat / Device untuk Sound dengan Merk yang sudah Terpercaya dan memiliki Team yang sudah Berpengalaman Lebih dari 10 Tahun dan Bidang Event, Sound, dll.
+                        Dilengkapi dengan Alat dan Operator yang berpengalaman sehingga menghasilkan Sound yang Terbaik. Disamping itu tersedia Paket Sound System dengan beberapa pilihan untuk menyesuaikan kebutuhan.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/stage.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>STAGE</h3>
+                        <p>Kami menyediakan berbagai ukuran modul untuk panggung event indoor dan juga Beragam ukuran panggung outdoot berupa Rigging Stage.
+                        Panggung kami bersifat portable dan mudah di bongkar pasang, hadir dengan harga yang ekonomis serta ukuran yang flexible sesuai kebutuhan client.
+                        </p>
                       </div>
                     </div>
                   </div>

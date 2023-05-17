@@ -67,11 +67,11 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/weddingmanagement.png') ?>">
+                        <img src="<?php echo base_url('assets/img/wedding_organizer.jpg') ?>">
                       </a>
                       <div class="card-title">
-                        <h3>WEDDING MANAGEMENT CREW</h3>
-                        <p>Dengan crew yang memiliki jam terbang tinggi, UF Enterprise siap untuk mewujudkan resepsi pernikahan para anak muda di Jabodetabek. Mulai dari menata rentetan susunan acara, Proses pemilihan vendor Busana, Rias, Catering, Foto & Video , entertaintment dan lainnya, hingga mengatur jalannya acara dengan sukses di hari H.</p>
+                        <h3>WEDDING ORGANIZER</h3>
+                        <p>Sudah menjadi kebutuhan dan trend saat ini, pernikahan tak perlu repot dan di handle oleh para wedding planner yang ahli di bidangnya, Pengantin cukup sampaikan apa keinginan dan kebutuhannya, Team WO kami siap membantu dari prosesi awal hingga resepsi selesai. Team WO  Tentu akan memudahkan tanggung jawab pengantin bersama keluarganya.</p>
                       </div>
                     </div>
                   </div>
@@ -81,11 +81,13 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/dekorasi.png') ?>">
+                        <img src="<?php echo base_url('assets/img/decoration.jpeg') ?>">
                       </a>
                       <div class="card-title">
-                        <h3>DEKORASI & PELAMINAN</h3>
-                        <p>Dekorasi menjadi point penting dalam sebuah pernikahan, UF Enterprise memilki dekorasi dan siap menyesuaikan konsep rancangan para calon pengantin. Tentunya dengan berbagai pilihan budget dan Ukuran.</p>
+                        <h3>DEKORASI</h3>
+                        <p>Dekorasi wedding adalah penentu sebuah acara resepsi tanpa mewah dan berkesan, Kami siap menyajikan berbagai pilihan dekorasi sesuai keinginan pengantin, Seperti Pilihan Warna, Pilihan Bunga, Hingga ke pilihan design.
+                        Dekorasi tersedia di berbagai jenis Resepsi, seperti dekorasi Resepsi Adat, Nasional, Chinese, Hingga Internasional bertema outdoor. Semua akan di konsep sesuai kebutuhan dan budget pengantin.
+                        </p>
                       </div>
                     </div>
                   </div>

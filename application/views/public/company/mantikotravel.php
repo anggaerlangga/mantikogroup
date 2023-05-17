@@ -93,9 +93,41 @@
                     </div>
                   </div>
                 </div>
-      
+
+                <div class="col-sm-4">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/booth.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>Booth Pameran</h3>
+                        <p>Mantiko menyewakan berbagai macam pilihan booth pameran, Dengan berbagai ukuran. 
+                          Selain itu booth yang kami sewakan juga dapat dibuat dan di design custom sesuai keinginan konsumen, hal ini tentu akan membuat produk yang dipamerankan akan lebih menarik dan menjual.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div> 
+
+            <div class="carousel-item">
+              <div class="col-sm-4">
+                  <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="card-body">
+                      <a href="#">
+                        <img src="<?php echo base_url('assets/img/event_venue.jpg') ?>">
+                      </a>
+                      <div class="card-title">
+                        <h3>HOTEL & VENUE</h3>
+                        <p>Mantiko telah bekerja sama dengan lebih dari 500 Hotel dan venue event di Indonesia, Client kami tidak perlu menghubungi venue satu persatu untuk mendapatkan harga dan kualitas terbaik, Karena Mantiko siap memberikan banyak pilihan tempat menginap dan venue acara sesuai dengan budget client. 
+                          Selain itu dengan melakukan pemesanan hotel/event venue di kami, client juga berhak mendapatkan benefit khusus dan bonus bonus menarik lainya.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
           <!-- End of carousel inner -->
           </div>
         </div>
