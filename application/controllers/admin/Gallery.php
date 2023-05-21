@@ -33,7 +33,7 @@ class Gallery extends CI_Controller
 		$config['max_size']             = 5000;
 		$config['encrypt_name'] 		= true;
         $this->load->library('upload',$config);
-        $gallery_id = uniqid();
+        // $gallery_id = uniqid();
 		$product_id = $this->input->post('product_id');
 		$jumlah_photo = count($_FILES['photo']['name']);
 		for($i = 0; $i < $jumlah_photo; $i++)

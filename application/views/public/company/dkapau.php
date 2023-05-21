@@ -95,7 +95,7 @@
                   <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="card-body">
                       <a href="#">
-                        <img src="<?php echo base_url('assets/img/snack_box.jpg') ?>">
+                        <img src="<?php echo base_url('assets/img/dessert.jpg') ?>">
                       </a>
                       <div class="card-title">
                         <h3>SNACK BOX</h3>

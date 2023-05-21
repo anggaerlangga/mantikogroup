@@ -84,7 +84,7 @@
                             
 
                             <div class="form-group">
-								<label for="image">Image</label>
+								<label for="image">Image (Uk. 1349 x 759px)</label>
 								<input class="form-control <?php echo form_error('image') ? 'is-invalid':'' ?>"
 								 type="file" name="image" />
                                  <input type="hidden" name="old_image" value="<?php echo $hero->image ?>" />

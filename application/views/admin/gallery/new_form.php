@@ -57,7 +57,7 @@
 							</div>
 
                             <div class="form-group">
-								<label for="name">Photo</label>
+								<label for="name">Photo (uk. 255 x 230px)</label>
 								<input class="form-control-file"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -66,7 +66,7 @@
                             </div>
 
                            <div class="form-group">
-								<label for="name">Photo 2</label>
+								<label for="name">Photo 2 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -75,7 +75,7 @@
                             </div>
 
                             <div class="form-group">
-								<label for="name">Photo 3</label>
+								<label for="name">Photo 3 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -84,7 +84,7 @@
                             </div>
 
                             <div class="form-group">
-								<label for="name">Photo 4</label>
+								<label for="name">Photo 4 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -93,7 +93,7 @@
                             </div>
 
                             <div class="form-group">
-								<label for="name">Photo 5</label>
+								<label for="name">Photo 5 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -102,7 +102,7 @@
                             </div>
 
 							<div class="form-group">
-								<label for="name">Photo 6</label>
+								<label for="name">Photo 6 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -111,7 +111,7 @@
                             </div>
 
 							<div class="form-group">
-								<label for="name">Photo 7</label>
+								<label for="name">Photo 7 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">
@@ -120,7 +120,7 @@
                             </div>
 
 							<div class="form-group">
-								<label for="name">Photo 8</label>
+								<label for="name">Photo 8 (uk. 255 x 230px)</label>
 								<input class="form-control-file <?php echo form_error('photo') ? 'is-invalid':'' ?>"
 								 type="file" name="photo[]" />
 								<div class="invalid-feedback">

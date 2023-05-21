@@ -59,7 +59,7 @@
 							</div>
 
                             <div class="form-group">
-								<label for="name">Photo</label>
+								<label for="name">Photo (Uk. 1349 x 759px)</label>
 								<input class="form-control-file <?php echo form_error('image') ? 'is-invalid':'' ?>"
 								 type="file" name="image" />
 								<div class="invalid-feedback">

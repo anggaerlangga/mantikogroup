@@ -37,7 +37,7 @@
             <a class="collapse-item" href="<?php echo site_url('admin/hero') ?>">Banner</a>
             <a class="collapse-item" href="<?php echo site_url('admin/content') ?>">Home Page</a>
             <a class="collapse-item" href="<?php echo site_url('admin/gallery') ?>">Gallery</a>
-            <a class="collapse-item" href="<?php echo site_url('admin/client') ?>">Client</a>
+            <!-- <a class="collapse-item" href="<?php echo site_url('admin/client') ?>">Client</a> -->
             <a class="collapse-item" href="<?php echo site_url('admin/contact') ?>">Contact</a>
         </div>
     </div>
