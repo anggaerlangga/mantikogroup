@@ -273,6 +273,20 @@
     </div>
 </section>
 
+<div class="modal fade" id="notifModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title justify-content-center" id="exampleModalLabel">Reminder</h5>
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">Your Website will expire soon. You need to extend the subscription. Please contact the administrator.</div>
+    </div>
+  </div>
+</div>
+
 </body>
 
 <script>

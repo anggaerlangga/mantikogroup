@@ -85,7 +85,29 @@
 <!-- End Footer -->
 
 <script>
-  $('.thumbnail').click(function(){
+  
+$(window).on('load', function() {
+  $('#notifModal').modal('show');
+});
+
+function reminder() {
+  var scrollTop = $(window).scrollTop();
+  var windowHeight = $(window).height();
+
+  $('.about').each(function() {
+    var elementPosition = $(this).offset().top;
+    if (elementPosition < (scrollTop + windowHeight - 100)) {
+      $('#notifModal').modal('show');
+    }    
+  });
+}
+
+// Call the counter function on scroll
+$(window).scroll(function() {
+  reminder();
+});
+
+$('.thumbnail').click(function(){
     $('.modal-body').empty();
     $($(this).parents('div').html()).appendTo('.modal-body');
     $('#modal').modal({show:true});
